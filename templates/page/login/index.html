@@ -1,0 +1,52 @@
+
+{% extends "_allbase.html" %}
+        {% block bill %}
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Bootstrap</strong></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>欢 迎 您</h3>
+                            		<p>登 录 您 的 账 户:</p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-lock"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+			                    <form role="form" id="bill_form" class="login-form">
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username">Username</label>
+			                        	<input type="text" name="username" placeholder="用户名..." class="form-username form-control" id="form-username">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">Password</label>
+			                        	<input type="password" name="password" placeholder="密码..." class="form-password form-control" id="form-password">
+			                        </div>
+			                        <button type="button" class="btn" id="submit">登 录!</button>
+			                    </form>
+                                <br>
+                                <p align="right"><a href="#">忘记密码?</a></p>
+		                    </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 social-login">
+                        	<h3>...没有账号?</h3><a href="#">点击注册</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        {% endblock %}
