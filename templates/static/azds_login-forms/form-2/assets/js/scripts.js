@@ -5,9 +5,9 @@ jQuery(document).ready(function() {
         Fullscreen background
     */
     $.backstretch([
-                    "static/azds_login-forms/form-2/assets/img/backgrounds/5.jpg"
-	              , "static/azds_login-forms/form-2/assets/img/backgrounds/5.jpg"
-	              , "static/azds_login-forms/form-2/assets/img/backgrounds/5.jpg"
+                    "static/azds_login-forms/form-2/assets/img/backgrounds/7.jpg"
+	              , "static/azds_login-forms/form-2/assets/img/backgrounds/7.jpg"
+	              , "static/azds_login-forms/form-2/assets/img/backgrounds/7.jpg"
 	             ], {duration: 3000, fade: 750});
     
     /*

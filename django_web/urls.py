@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django_web.django_apps import home
+from django_web.django_apps import home, bill
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^home$', home.home),
-    url(r'^user_login$', home.user_login)
+    url(r'^user_login$', home.user_login),
+    url(r'^forget$', home.forget),
+    url(r'^user_add$', home.user_add),
+    url(r'^bill$', bill.bill_init)
 ]
+

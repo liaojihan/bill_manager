@@ -19,7 +19,7 @@ $(document).on('click', '#submit', function () {
    $.ajax({
         url: 'user_login',
         dataType: 'json',
-        type: 'post',
+        type: 'get',
         data: $('#bill_form').serializeArray(),
         success: function (data) {
             if (data === '1'){
@@ -30,3 +30,49 @@ $(document).on('click', '#submit', function () {
         }
    });
 });
+
+// --- 触发注册model
+function add_user() {
+    $('#form_user_add').find('input').val("");
+    $('#add_user_model').modal({backdrop: 'static', keyboard: false});
+}
+
+// --- 注册
+$(document).on('click', '#add_user', function () {
+    var user_name = $('#new_name').val().trim();
+    var user_password = $('#new_password').val().trim();
+    var question = $('#question').val().trim();
+    var answer = $('#answer').val().trim();
+    if (user_name.length === 0 || user_name === ""){
+        layer.msg('用户名还没输入呢');
+        return;
+    }
+    if (user_password.length === 0 || user_password === ""){
+        layer.msg('密码还没输入呢');
+        return;
+    }
+    if (question === '--请选择一个问题--'){
+        layer.msg('请选择一个问题');
+        return;
+    }
+    if (answer.length === 0 || answer === ""){
+        layer.msg('答案还没输入呢！');
+        return;
+    }
+    $.ajax({
+        url: "user_add",
+        dataType: 'json',
+        type: 'post',
+        data: $('#form_user_add').serializeArray(),
+        success: function (data) {
+            if (data === '1'){
+                layer.confirm('注册成功，请牢记密码提示问题\n用于找回密码', {btn: ['知道了']}, function(){
+                    $('#add_user_model').modal('hide');
+                });
+            }else {
+                layer.alert(data);
+            }
+        }
+    });
+});
+
