@@ -31,3 +31,6 @@ def user_add(user_dict):
         return u'该用户名已被注册'
     return u"1"
 
+
+def update_forget_password(username):
+    pass

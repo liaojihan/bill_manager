@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^user_login$', home.user_login),
     url(r'^forget$', home.forget),
     url(r'^user_add$', home.user_add),
-    url(r'^bill$', bill.bill_init)
+    url(r'^bill$', bill.bill_init),
+    url(r'^confirm_username$', )
 ]
 
