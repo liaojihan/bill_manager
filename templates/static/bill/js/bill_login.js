@@ -45,10 +45,12 @@ $(document).on('click', '#add_user', function () {
     var answer = $('#answer').val().trim();
     if (user_name.length === 0 || user_name === ""){
         layer.msg('用户名还没输入呢');
+        $('#new_name').focus();
         return;
     }
     if (user_password.length === 0 || user_password === ""){
         layer.msg('密码还没输入呢');
+        $('#new_password').focus();
         return;
     }
     if (question === '--请选择一个问题--'){
@@ -57,6 +59,7 @@ $(document).on('click', '#add_user', function () {
     }
     if (answer.length === 0 || answer === ""){
         layer.msg('答案还没输入呢！');
+        $('#answer').focus();
         return;
     }
     $.ajax({
@@ -66,9 +69,8 @@ $(document).on('click', '#add_user', function () {
         data: $('#form_user_add').serializeArray(),
         success: function (data) {
             if (data === '1'){
-                layer.confirm('注册成功，请牢记密码提示问题\n用于找回密码', {btn: ['知道了']}, function(){
-                    $('#add_user_model').modal('hide');
-                });
+                layer.msg('注册成功，请牢记密码提示问题\r \n用于找回密码');
+                $('#add_user_model').modal('hide');
             }else {
                 layer.alert(data);
             }
