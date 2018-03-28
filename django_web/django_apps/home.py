@@ -15,8 +15,13 @@ def home(request):
 def user_login(request):
     """用户登录"""
     user_dict = request.GET
-    result = home_dao.user_login(user_dict)
-    return HttpResponse(json.dumps(result), content_type=result_type)
+    if user_dict:
+        user_name = user_dict['username']
+        user_password = user_dict['password']
+        result = home_dao.user_login(user_name, user_password)
+        if result == u'1':
+            request.session['user_name'] = user_name
+        return HttpResponse(json.dumps(result), content_type=result_type)
 
 
 def forget(request):
@@ -28,15 +33,18 @@ def confirm_username(request):
     """验证用户名"""
     username = request.GET['username']
     result = home_dao.update_forget_password(username)
+    if result == u'1':
+        request.session['user_name'] = username
     return HttpResponse(json.dumps(result), content_type=result_type)
 
 
 def get_id_question(request):
     """初始化验证密码问题页面"""
-    username = request.GET.get('username', '')
+    username = request.session.get('user_name', '')
     result = dict()
     if username:
         user_id, question = home_dao.get_id_question(username)
+        request.session['user_id'] = user_id
         result = {'user_id': user_id, 'question': question}
         page = 'page/login/check_answer.html'
     else:
@@ -60,7 +68,7 @@ def user_add(request):
 
 def reset_password(request):
     """初始化重置密码页面"""
-    user_id = request.GET.get('user_id', '')
+    user_id = request.session.get('user_id', '')
     user_dict = dict()
     if user_id:
         user_dict = {'user_id': user_id}
@@ -71,10 +79,9 @@ def reset_password(request):
 
 
 def reset_user_password(request):
+    """重置密码"""
     user_dict = request.POST
     result = home_dao.reset_password_dao(user_dict)
+    if result == u'1':
+        request.session.clear()
     return HttpResponse(json.dumps(result), content_type=result_type)
-
-
-def page_error(request):
-    return render_to_response('page/error/500.html')

@@ -3,20 +3,27 @@
  */
 
 // --- 登录
-$(document).on('click', '#submit', function () {
-   var username = $('#form-username').val().trim();
-   var password = $('#form-password').val().trim();
-   if (username.length === 0 || username === ""){
+$('body').keyup(function (event) {
+    //监听回车事件
+    if (event.keyCode == "13"){
+        $('#submit').click();
+    }
+});
+
+$('#submit').click(function () {
+    var username = $('#form-username').val().trim();
+    var password = $('#form-password').val().trim();
+    if (username.length === 0 || username === ""){
         layer.msg('用户名还没输入呢');
         $('#form-username').focus();
         return;
-   }
-   if (password.length === 0 || password === ""){
+    }
+    if (password.length === 0 || password === ""){
         layer.msg('密码还没输入呢');
         $('#form-password').focus();
         return;
-   }
-   $.ajax({
+    }
+    $.ajax({
         url: 'user_login',
         dataType: 'json',
         type: 'get',
@@ -28,9 +35,8 @@ $(document).on('click', '#submit', function () {
                 layer.alert('账户信息有误，请重新输入！');
             }
         }
-   });
+    });
 });
-
 // --- 触发注册model
 function add_user() {
     $('#form_user_add').find('input').val("");

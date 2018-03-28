@@ -17,7 +17,7 @@ $(document).on('click', '#confirm_username', function () {
         type: 'get',
         success: function (data) {
             if (data === "1"){
-                window.location.href = "get_id_question?username=" + username;
+                window.location.href = "get_id_question";
             }else {
                 layer.msg("用户名不存在，请检查");
             }
@@ -41,7 +41,7 @@ $(document).on('click', '#confirm_question', function () {
         type: 'get',
         success: function (data) {
             if (data === '1'){
-                window.location.href = 'reset_password?user_id=' + user_id;
+                window.location.href = 'reset_password';
             }else {
                 layer.msg(data);
             }

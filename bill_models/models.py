@@ -10,6 +10,7 @@ class User(models.Model):
     question = models.CharField(max_length=1024)
     answer = models.CharField(max_length=1024)
     is_delete = models.BooleanField()
+    last_login = models.DateTimeField()
 
     class Meta:
         db_table = 'user'

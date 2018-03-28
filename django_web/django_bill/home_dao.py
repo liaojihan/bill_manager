@@ -1,15 +1,15 @@
 # coding=utf-8
 from bill_models.models import User
+from datetime import datetime
 
 
-def user_login(user_dict):
-    user_name = user_dict['username']
-    user_password = user_dict['password']
+def user_login(username, user_password):
     try:
-        User.objects.get(user_name=user_name, user_password=user_password).first()
+        User.objects.get(user_name=username, user_password=user_password)
     except Exception:
         return u'账户信息有误，请检查'
     else:
+        User.objects.filter(user_name=username, user_password=user_password).update(last_login=datetime.now())
         return u'1'
 
 
@@ -25,7 +25,8 @@ def user_add(user_dict):
                     user_password=user_password,
                     question=user_question,
                     answer=user_answer,
-                    is_delete=False)
+                    is_delete=False,
+                    last_login=datetime.now())
         user.save()
     else:
         return u'该用户名已被注册'
