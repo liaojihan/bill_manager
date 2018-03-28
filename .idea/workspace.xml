@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0bea6d3-0253-41a0-bd92-3a980d160562" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/django_apps/home.py" afterPath="$PROJECT_DIR$/django_web/django_apps/home.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/urls.py" afterPath="$PROJECT_DIR$/django_web/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_allbase.html" afterPath="$PROJECT_DIR$/templates/_allbase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page/login/forget_password.html" afterPath="$PROJECT_DIR$/templates/page/login/forget_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" afterPath="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/page/error/500.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/page/login/check_answer.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/page/login/reset_password.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/django_web.iml" afterPath="$PROJECT_DIR$/.idea/django_web.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bill_models/models.py" afterPath="$PROJECT_DIR$/bill_models/models.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/django_apps/home.py" afterPath="$PROJECT_DIR$/django_web/django_apps/home.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/settings.py" afterPath="$PROJECT_DIR$/django_web/settings.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/urls.py" afterPath="$PROJECT_DIR$/django_web/urls.py" />
+      <change beforePath="$PROJECT_DIR$/templates/_allbase.html" afterPath="$PROJECT_DIR$/templates/_allbase.html" />
+      <change beforePath="$PROJECT_DIR$/templates/page/login/forget_password.html" afterPath="$PROJECT_DIR$/templates/page/login/forget_password.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bill/js/bill_login.js" afterPath="$PROJECT_DIR$/templates/static/bill/js/bill_login.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" afterPath="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,31 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_web/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bill_login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/static/bill/js/bill_login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <state relative-caret-position="446">
+              <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
               <folding>
                 <element signature="e#644#676#0" expanded="true" />
               </folding>
@@ -70,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/django_apps/home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="27" column="73" lean-forward="false" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+            <state relative-caret-position="334">
+              <caret line="74" column="34" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
               <folding>
                 <element signature="e#15#51#0" expanded="true" />
               </folding>
@@ -82,11 +72,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_dao.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home_dao.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_web/django_bill/home_dao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state relative-caret-position="419">
+              <caret line="66" column="64" lean-forward="true" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bill_models/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -95,18 +95,8 @@
       <file leaf-file-name="forget_password.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page/login/forget_password.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="27" column="151" lean-forward="true" selection-start-line="27" selection-start-column="135" selection-end-line="27" selection-end-column="151" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="68" />
+            <state relative-caret-position="136">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -115,8 +105,38 @@
       <file leaf-file-name="forget_password.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/static/bill/js/forget_password.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="145">
+              <caret line="101" column="33" lean-forward="false" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_allbase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/_allbase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_answer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/page/login/check_answer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-27">
+              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset_password.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/page/login/reset_password.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -128,8 +148,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -149,6 +169,8 @@
       <find>DATABASES</find>
       <find>INSTALLED_APPS</find>
       <find>data</find>
+      <find>check_answer</find>
+      <find>confirm_question</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,19 +186,24 @@
         <option value="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/django_models/bill.py" />
         <option value="$PROJECT_DIR$/django_models/user.py" />
-        <option value="$PROJECT_DIR$/django_web/settings.py" />
-        <option value="$PROJECT_DIR$/bill_models/models.py" />
         <option value="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
         <option value="$PROJECT_DIR$/templates/page/bill/bill.html" />
         <option value="$PROJECT_DIR$/django_web/django_apps/bill.py" />
         <option value="$PROJECT_DIR$/templates/page/login/index.html" />
-        <option value="$PROJECT_DIR$/templates/static/bill/js/bill_login.js" />
         <option value="$PROJECT_DIR$/templates/_allbase.html" />
+        <option value="$PROJECT_DIR$/templates/static/bill/js/bill_login.js" />
+        <option value="$PROJECT_DIR$/templates/page/login/check_answer.html" />
+        <option value="$PROJECT_DIR$/django_web/settings.py" />
+        <option value="$PROJECT_DIR$/templates/500.html" />
+        <option value="$PROJECT_DIR$/templates/page/error/500.html" />
         <option value="$PROJECT_DIR$/templates/page/login/forget_password.html" />
-        <option value="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" />
+        <option value="$PROJECT_DIR$/templates/page/login/ppaa.html" />
+        <option value="$PROJECT_DIR$/templates/page/login/reset_password.html" />
         <option value="$PROJECT_DIR$/django_web/urls.py" />
-        <option value="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
+        <option value="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" />
         <option value="$PROJECT_DIR$/django_web/django_apps/home.py" />
+        <option value="$PROJECT_DIR$/bill_models/models.py" />
+        <option value="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
       </list>
     </option>
   </component>
@@ -194,10 +221,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-47" />
-    <option name="y" value="182" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -246,12 +273,6 @@
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="django_bill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,7 +285,62 @@
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="bill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
+              <item name="form-2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
+              <item name="form-2" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
+              <item name="form-2" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
@@ -281,6 +357,11 @@
               <item name="bill" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -292,18 +373,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/dasb" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static\azds_login-forms\form-2\assets\img\backgrounds" />
-      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_file\bill_manager\templates\page\error" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\page\login" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web\templates" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_file\bill_manager\templates\page\login" />
+      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static\azds_login-forms\form-2\assets\img\backgrounds" />
+      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,13 +421,29 @@
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/django_web/templates/static/azds_login-forms/form-1/index.html" />
+    <configuration name="django_web" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_web.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django_web" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -492,6 +591,14 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -506,32 +613,7 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
     </configuration>
-    <configuration name="django_web" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="django_web.settings" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="django_web" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-    </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/django_web/templates/static/azds_login-forms/form-1/index.html" />
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Django server.django_web" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
@@ -546,6 +628,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -581,21 +666,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="41" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15075107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38321996" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3735763" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27282378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50547045" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50569475" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43167028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -604,6 +690,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@django_web" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61930585" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,11 +706,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_web/view.py" />
-    <entry file="file://$PROJECT_DIR$/django_web/view.py" />
-    <entry file="file://$PROJECT_DIR$/templates/static/azds_login-forms/form-1/assets/js/scripts.js" />
-    <entry file="file://$PROJECT_DIR$/templates/static/azds_login-forms/form-1/index.html" />
-    <entry file="file://$PROJECT_DIR$/django_web/home.py" />
     <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2332">
@@ -733,20 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/bill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -754,61 +822,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/site-packages/django/template/loaders/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/_allbase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/bill_login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/login/forget_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="151" lean-forward="true" selection-start-line="27" selection-start-column="135" selection-end-line="27" selection-end-column="151" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/forget_password.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Python27/Lib/site-packages/django/template/loaders/base.py" />
     <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -817,31 +831,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/bill_login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="72" column="42" lean-forward="false" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/error/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="47" column="26" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="47" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/bill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/login/jquery-1.11.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/login/ppaa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/login/reset_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/login/check_answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/_allbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="446">
+          <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
           <folding>
             <element signature="e#644#676#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/django_bill/home_dao.py">
+    <entry file="file://$PROJECT_DIR$/templates/page/login/forget_password.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_apps/home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="73" lean-forward="false" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+        <state relative-caret-position="334">
+          <caret line="74" column="34" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
           <folding>
             <element signature="e#15#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/forget_password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="101" column="33" lean-forward="false" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bill_models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/django_bill/home_dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="66" column="64" lean-forward="true" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>

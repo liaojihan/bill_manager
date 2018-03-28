@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 Django settings for django_web project.
 
@@ -24,7 +25,7 @@ SECRET_KEY = 'nwv!%3xm*6%bi5+h9@(61fxdx6s1#5w=7ht8htru7m=ke8#ey$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -122,3 +123,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'templates/static'),
 )
 
+# 页面权限
+LOGIN_URL = '/home'

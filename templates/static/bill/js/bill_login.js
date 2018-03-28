@@ -69,7 +69,7 @@ $(document).on('click', '#add_user', function () {
         data: $('#form_user_add').serializeArray(),
         success: function (data) {
             if (data === '1'){
-                layer.msg('注册成功，请牢记密码提示问题\r \n用于找回密码');
+                layer.msg('注册成功，请牢记密码提示问题\r\n用于找回密码');
                 $('#add_user_model').modal('hide');
             }else {
                 layer.alert(data);

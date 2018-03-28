@@ -1,0 +1,34 @@
+{% extends "_allbase.html" %}
+    {% block bill %}
+        <div class="top-content">
+
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>验证密码问题</strong></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                            <div class="form-bottom">
+                                <form role="form" id="bill_form" class="login-form">
+                                    <input type="hidden" value="{{ user_id }}" id="user_id_check">
+                                    <div class="form-group">
+                                        <label>密码问题:</label>
+                                        <input type="text" readonly="readonly" class="form-username form-control" value="{{ question }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>答案:</label>
+                                        <input type="text" name="question" class="form-username form-control" id="check_answer">
+                                    </div>
+                                    <button type="button" class="btn" id="confirm_question">验 证!</button>
+                                </form>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    {% endblock %}
