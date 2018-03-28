@@ -18,9 +18,9 @@ def user_login(request):
     if user_dict:
         user_name = user_dict['username']
         user_password = user_dict['password']
-        result = home_dao.user_login(user_name, user_password)
+        result, user_id = home_dao.user_login(user_name, user_password)
         if result == u'1':
-            request.session['user_name'] = user_name
+            request.session['user_id'] = user_id
         return HttpResponse(json.dumps(result), content_type=result_type)
 
 

@@ -7,10 +7,10 @@ def user_login(username, user_password):
     try:
         User.objects.get(user_name=username, user_password=user_password)
     except Exception:
-        return u'账户信息有误，请检查'
+        return u'用户信息有误，请检查', 0
     else:
-        User.objects.filter(user_name=username, user_password=user_password).update(last_login=datetime.now())
-        return u'1'
+        user_id = User.objects.filter(user_name=username).first().id
+        return u'1', user_id
 
 
 def user_add(user_dict):
@@ -24,9 +24,7 @@ def user_add(user_dict):
         user = User(user_name=user_name,
                     user_password=user_password,
                     question=user_question,
-                    answer=user_answer,
-                    is_delete=False,
-                    last_login=datetime.now())
+                    answer=user_answer)
         user.save()
     else:
         return u'该用户名已被注册'

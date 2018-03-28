@@ -1,10 +1,118 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Bill</title>
+    <link rel="shortcut icon" href="{% static "azds_login-forms/form-2/assets/ico/favicon.png" %}">
+    <!-- Bootstrap Styles-->
+    <link href="{% static "manage/assets/css/bootstrap.css" %}" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="{% static "manage/assets/css/font-awesome.css"%}" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="{% static "manage/assets/js/morris/morris-0.4.3.min.css"%}" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="{% static "manage/assets/css/custom-styles.css"%}" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{% static "manage/assets/js/Lightweight-Chart/cssCharts.css"%}">
 </head>
+
 <body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><strong>账单</strong></a>
+
+		        <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="table.html"><i class="fa fa-table"></i> Responsive Tables</a>
+                    </li>
+                    <li>
+                        <a href="form.html"><i class="fa fa-edit"></i> Forms </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+
+		<div id="page-wrapper">
+			{% block bill_base %}
+            {% endblock %}
+
+				<footer><p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+
+
+				</footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="{% static "manage/assets/js/jquery-1.10.2.js"%}"></script>
+    <!-- Bootstrap Js -->
+    <script src="{% static "manage/assets/js/bootstrap.min.js"%}"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="{% static "manage/assets/js/jquery.metisMenu.js"%}"></script>
+    <!-- Morris Chart Js -->
+    <script src="{% static "manage/assets/js/morris/raphael-2.1.0.min.js"%}"></script>
+    <script src="{% static "manage/assets/js/morris/morris.js"%}"></script>
+
+
+	<script src="{% static "manage/assets/js/easypiechart.js"%}"></script>
+	<script src="{% static "manage/assets/js/easypiechart-data.js"%}"></script>
+
+	 <script src="{% static "manage/assets/js/Lightweight-Chart/jquery.chart.js"%}"></script>
+
+    <!-- Custom Js -->
+    <script src="{% static "manage/assets/js/custom-scripts.js"%}"></script>
+
+      <script>
+
+      </script>
 
 </body>
+
 </html>
