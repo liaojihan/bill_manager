@@ -18,6 +18,8 @@
     <!-- Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="{% static "manage/assets/js/Lightweight-Chart/cssCharts.css"%}">
+    <!-- TABLE STYLES-->
+    <link href="{% static "manage/assets/js/dataTables/dataTables.bootstrap.css"%}" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><strong>账单</strong></a>
+                <a class="navbar-brand" href="bill"><strong>账单</strong></a>
 
 		        <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
             </div>
@@ -61,13 +63,10 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li>
-                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a href="bill" ><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="table.html"><i class="fa fa-table"></i> Responsive Tables</a>
-                    </li>
-                    <li>
-                        <a href="form.html"><i class="fa fa-edit"></i> Forms </a>
+                        <a href="detailed"><i class="fa fa-table"></i> Responsive Tables</a>
                     </li>
                 </ul>
             </div>
@@ -86,32 +85,53 @@
             <!-- /. PAGE INNER  -->
         </div>
         <!-- /. PAGE WRAPPER  -->
-    </div>
     <!-- /. WRAPPER  -->
-    <!-- JS Scripts-->
-    <!-- jQuery Js -->
-    <script src="{% static "manage/assets/js/jquery-1.10.2.js"%}"></script>
-    <!-- Bootstrap Js -->
-    <script src="{% static "manage/assets/js/bootstrap.min.js"%}"></script>
+        <!-- JS Scripts-->
+        <!-- jQuery Js -->
+        <script src="{% static "manage/assets/js/jquery-1.10.2.js"%}"></script>
+        <!-- Bootstrap Js -->
+        <script src="{% static "manage/assets/js/bootstrap.min.js"%}"></script>
+         <!-- DATA TABLE SCRIPTS -->
+        <script src="{% static "manage/assets/js/dataTables/jquery.dataTables.js"%}"></script>
+        <script src="{% static "manage/assets/js/dataTables/dataTables.bootstrap.js"%}"></script>
+        <script src="{% static "bill/js/sys.js" %}"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable(
+                    {
+                        "serverSide": true,
+                        "retrieve": true,
+                        "processing": true,
+                        "ordering": false,
+                        "searching": false,
+                        "pagingType": "input",
+                        "lengthMenu": [10, 20, 30, 40],
+                        language: dtLanguage,
+                        ajax: {
+                            url: 'get_table_data',
+                            type: 'get'
+                        },
+                        columnDefs:[],
+                        columns: []
+                    }
+                );
+            });
+        </script>
+        <!-- Metis Menu Js -->
+        <script src="{% static "manage/assets/js/jquery.metisMenu.js"%}"></script>
+        <!-- Morris Chart Js -->
+        <script src="{% static "manage/assets/js/morris/raphael-2.1.0.min.js"%}"></script>
+        <script src="{% static "manage/assets/js/morris/morris.js"%}"></script>
 
-    <!-- Metis Menu Js -->
-    <script src="{% static "manage/assets/js/jquery.metisMenu.js"%}"></script>
-    <!-- Morris Chart Js -->
-    <script src="{% static "manage/assets/js/morris/raphael-2.1.0.min.js"%}"></script>
-    <script src="{% static "manage/assets/js/morris/morris.js"%}"></script>
 
+        <script src="{% static "manage/assets/js/easypiechart.js"%}"></script>
+        <script src="{% static "manage/assets/js/easypiechart-data.js"%}"></script>
 
-	<script src="{% static "manage/assets/js/easypiechart.js"%}"></script>
-	<script src="{% static "manage/assets/js/easypiechart-data.js"%}"></script>
+         <script src="{% static "manage/assets/js/Lightweight-Chart/jquery.chart.js"%}"></script>
 
-	 <script src="{% static "manage/assets/js/Lightweight-Chart/jquery.chart.js"%}"></script>
+        <!-- Custom Js -->
+        <script src="{% static "manage/assets/js/custom-scripts.js"%}"></script>
 
-    <!-- Custom Js -->
-    <script src="{% static "manage/assets/js/custom-scripts.js"%}"></script>
-
-      <script>
-
-      </script>
 
 </body>
 

@@ -18,7 +18,7 @@ class User(models.Model):
 class Bill(models.Model):
     """账单"""
     amount = models.IntegerField()
-    create_time = models.IntegerField()
+    create_time = models.DateTimeField()
     is_delete = models.BooleanField()
     type = models.ForeignKey('ConsumptionType')
     user = models.ForeignKey('User')

@@ -2,64 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0bea6d3-0253-41a0-bd92-3a980d160562" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bill_models/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bill_models/migrations/__init__.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/django_web.iml" afterPath="$PROJECT_DIR$/.idea/django_web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bill_models/models.py" afterPath="$PROJECT_DIR$/bill_models/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/django_apps/bill.py" afterPath="$PROJECT_DIR$/django_web/django_apps/bill.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/django_apps/home.py" afterPath="$PROJECT_DIR$/django_web/django_apps/home.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_web/urls.py" afterPath="$PROJECT_DIR$/django_web/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_all_bill_base.html" afterPath="$PROJECT_DIR$/templates/_all_bill_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_allbase.html" afterPath="$PROJECT_DIR$/templates/_allbase.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/page/bill/bill.html" afterPath="$PROJECT_DIR$/templates/page/bill/overview.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/templates/static/manage/assets/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/templates/static/manage/assets/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/css/custom-styles.css" afterPath="$PROJECT_DIR$/templates/static/manage/assets/css/custom-styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/css/font-awesome.css" afterPath="$PROJECT_DIR$/templates/static/manage/assets/css/font-awesome.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/font-awesome/fonts/fontawesome-webfontba72.eot" afterPath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/font-awesome/fonts/fontawesome-webfontba72.svg" afterPath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/font-awesome/fonts/fontawesome-webfontba72.ttf" afterPath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/font-awesome/fonts/fontawesome-webfontba72.woff" afterPath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/font-awesome/fonts/fontawesome-webfontd41d.eot" afterPath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontd41d.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/fonts/glyphicons-halflings-regulard41d.eot" afterPath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regulard41d.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/img/bg-img.jpg" afterPath="$PROJECT_DIR$/templates/static/manage/assets/img/bg-img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/Lightweight-Chart/README.md" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/Lightweight-Chart/chart.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/chart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/Lightweight-Chart/cssCharts.css" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/cssCharts.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/Lightweight-Chart/index - Copy.html" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/index - Copy.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/Lightweight-Chart/index.html" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/Lightweight-Chart/jquery.chart.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/jquery.chart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/Lightweight-Chart/jquery.chart.min.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/jquery.chart.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/chart-data.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/chart-data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/chart.min.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/chart.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/custom-scripts.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/custom-scripts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/custom.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/custom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/dataTables/dataTables.bootstrap.css" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/dataTables/dataTables.bootstrap.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/dataTables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/jquery.dataTables.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/easypiechart-data.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/easypiechart-data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/easypiechart.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/easypiechart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/jquery-1.10.2.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/jquery.metisMenu.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/jquery.metisMenu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/morris/morris-0.4.3.min.css" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/morris/morris-0.4.3.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/morris/morris.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/morris/morris.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/assets/js/morris/raphael-2.1.0.min.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/morris/raphael-2.1.0.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/b.jpg" afterPath="$PROJECT_DIR$/templates/static/manage/b.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/contact/contact_me.js" afterPath="$PROJECT_DIR$/templates/static/manage/contact/contact_me.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/contact/jqBootstrapValidation.js" afterPath="$PROJECT_DIR$/templates/static/manage/contact/jqBootstrapValidation.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/form.html" afterPath="$PROJECT_DIR$/templates/static/manage/form.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/index.html" afterPath="$PROJECT_DIR$/templates/static/manage/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/s.jpg" afterPath="$PROJECT_DIR$/templates/static/manage/s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/static/cpts_769_bgi/table.html" afterPath="$PROJECT_DIR$/templates/static/manage/table.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/page/bill/detailed.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/page/bill/situation_map.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/django_web.iml" afterPath="$PROJECT_DIR$/.idea/django_web.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bill_models/migrations/0001_initial.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bill_models/migrations/__init__.py" afterPath="$PROJECT_DIR$/templates/static/bill/js/sys.js" />
+      <change beforePath="$PROJECT_DIR$/bill_models/models.py" afterPath="$PROJECT_DIR$/bill_models/models.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/django_apps/bill.py" afterPath="$PROJECT_DIR$/django_web/django_apps/bill.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/settings.py" afterPath="$PROJECT_DIR$/django_web/settings.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/urls.py" afterPath="$PROJECT_DIR$/django_web/urls.py" />
+      <change beforePath="$PROJECT_DIR$/templates/_all_bill_base.html" afterPath="$PROJECT_DIR$/templates/_all_bill_base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/page/bill/overview.html" afterPath="$PROJECT_DIR$/templates/page/bill/overview.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/b.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/form.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/s.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/table.html" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,31 +51,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_web/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="433">
+              <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bill.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bill.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="433">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#15#73#0" expanded="true" />
               </folding>
@@ -122,31 +73,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bill_dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forget_password.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/static/bill/js/forget_password.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4872">
-              <caret line="285" column="15" lean-forward="false" selection-start-line="285" selection-start-column="15" selection-end-line="285" selection-end-column="15" />
+            <state relative-caret-position="189">
+              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6010">
+              <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_all_bill_base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/_all_bill_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="110" column="48" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="situation_map.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/page/bill/situation_map.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-972">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,40 +116,28 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bill_models/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="162">
+              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_web/django_apps/home.py">
+      <file leaf-file-name="sys.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/static/bill/js/sys.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-              <folding>
-                <element signature="e#15#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home_dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_web/django_bill/home_dao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+            <state relative-caret-position="108">
+              <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_allbase.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/_allbase.html">
+      <file leaf-file-name="custom-scripts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/custom-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="25" column="99" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="99" />
+            <state relative-caret-position="302">
+              <caret line="210" column="31" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -200,22 +149,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Sta</find>
-      <find>1</find>
-      <find>1/.</find>
-      <find>1/</find>
-      <find>1.</find>
-      <find>1.j</find>
-      <find>1.jp</find>
-      <find>1.jpg</find>
-      <find>script.js</find>
       <find>or lo</find>
       <find>csrf</find>
       <find>DATABASES</find>
@@ -229,6 +169,23 @@
       <find>Dash</find>
       <find>confirm_question</find>
       <find>Dashboard</find>
+      <find>page-wrapper</find>
+      <find>jquery-1.10.2.js</find>
+      <find>bootstrap.min.js</find>
+      <find>jquery.metisMenu.js</find>
+      <find>raphael-2.1.0.min.js</find>
+      <find>morris.js</find>
+      <find>easypiechart.js</find>
+      <find>jquery.chart.js</find>
+      <find>records per page</find>
+      <find>Search</find>
+      <find>main-menu</find>
+      <find>active</find>
+      <find>sideNav</find>
+      <find>home</find>
+      <find>Previous</find>
+      <find>previous</find>
+      <find>dataTables-example</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -255,16 +212,23 @@
         <option value="$PROJECT_DIR$/templates/page/login/index.html" />
         <option value="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" />
         <option value="$PROJECT_DIR$/templates/static/bill/js/bill_login.js" />
-        <option value="$PROJECT_DIR$/django_web/settings.py" />
         <option value="$PROJECT_DIR$/templates/static/cpts_769_bgi/index.html" />
         <option value="$PROJECT_DIR$/templates/_allbase.html" />
-        <option value="$PROJECT_DIR$/templates/_all_bill_base.html" />
-        <option value="$PROJECT_DIR$/templates/page/bill/overview.html" />
-        <option value="$PROJECT_DIR$/django_web/urls.py" />
-        <option value="$PROJECT_DIR$/bill_models/models.py" />
         <option value="$PROJECT_DIR$/django_web/django_apps/home.py" />
         <option value="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
         <option value="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
+        <option value="$PROJECT_DIR$/bill_models/models.py" />
+        <option value="$PROJECT_DIR$/templates/static/manage/table.html" />
+        <option value="$PROJECT_DIR$/templates/static/manage/form.html" />
+        <option value="$PROJECT_DIR$/django_web/settings.py" />
+        <option value="$PROJECT_DIR$/templates/page/bill/bill_type.html" />
+        <option value="$USER_HOME$/Downloads/cpts_769_bgi/table.html" />
+        <option value="$PROJECT_DIR$/templates/page/bill/overview.html" />
+        <option value="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" />
+        <option value="$PROJECT_DIR$/templates/static/bill/js/sys.js" />
+        <option value="$PROJECT_DIR$/templates/page/bill/detailed.html" />
+        <option value="$PROJECT_DIR$/templates/_all_bill_base.html" />
+        <option value="$PROJECT_DIR$/django_web/urls.py" />
         <option value="$PROJECT_DIR$/django_web/django_apps/bill.py" />
       </list>
     </option>
@@ -304,8 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -357,13 +319,6 @@
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -371,41 +326,15 @@
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
+              <item name="bill" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
-              <item name="form-2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
-              <item name="form-2" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="azds_login-forms" type="462c0819:PsiDirectoryNode" />
-              <item name="form-2" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="ico" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bill" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
@@ -416,26 +345,29 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="D:/dasb" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_file\bill_manager\templates\page\bill" />
+      <recent name="D:\github_file\bill_manager\templates\static" />
+      <recent name="D:\github_file\bill_manager\templates\page\login" />
+      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static\azds_login-forms\form-2\assets\img\backgrounds" />
+      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\github_file\bill_manager\templates\page\error" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\page\login" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web\templates" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github_file\bill_manager\templates\static" />
-      <recent name="D:\github_file\bill_manager\templates\page\login" />
-      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static\azds_login-forms\form-2\assets\img\backgrounds" />
-      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -470,13 +402,29 @@
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/django_web/templates/static/azds_login-forms/form-1/index.html" />
+    <configuration name="django_web" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_web.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django_web" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -624,6 +572,14 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -639,30 +595,6 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="django_web" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="django_web.settings" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="django_web" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-    </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/django_web/templates/static/azds_login-forms/form-1/index.html" />
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Django server.django_web" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.xxxxx" />
@@ -716,31 +648,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="41" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19742489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3821656" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3667426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2687704" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29053319" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18123667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29157177" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43167028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@django_web" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61930585" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,78 +688,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/site-packages/django/db/models/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/django_models/admin.py" />
-    <entry file="file://$PROJECT_DIR$/django_models/models.py" />
-    <entry file="file://$PROJECT_DIR$/django_models/bill.py" />
-    <entry file="file://$PROJECT_DIR$/django_models/migrations/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/django_models/user.py" />
-    <entry file="file://C:/Python27/Lib/__future__.py" />
-    <entry file="file://$PROJECT_DIR$/bill_models/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/middleware/clickjacking.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/utils/deprecation.py" />
-    <entry file="file://$PROJECT_DIR$/bill_models/migrations/0002_auto_20180322_1551.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/migrations/0003_auto_20180322_1618.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/site-packages/django/template/loaders/base.py" />
-    <entry file="file://$PROJECT_DIR$/templates/page/error/500.html" />
-    <entry file="file://$PROJECT_DIR$/templates/page/login/jquery-1.11.1.js" />
-    <entry file="file://$PROJECT_DIR$/templates/page/login/ppaa.html" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/decorators.py" />
-    <entry file="file://$PROJECT_DIR$/bill_models/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-441">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-762174762/datetime.py" />
     <entry file="file://C:/Python27/Lib/site-packages/django/utils/timezone.py" />
     <entry file="file://C:/Python27/Lib/site-packages/django/db/models/base.py" />
@@ -848,12 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <marker date="1522236852550" expanded="true" signature="2114:2191" ph="{...}" />
-            <marker date="1522236852550" expanded="true" signature="2114:2256" ph="{...}" />
-            <marker date="1522236852550" expanded="true" signature="2114:2262" ph="{&quot;url&quot;: &quot;user_add&quot;...}" />
-            <marker date="1522236852550" expanded="true" signature="2114:2266" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,32 +725,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/custom-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/ico/favicon.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/_all_bill_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1856">
-          <caret line="109" column="66" lean-forward="false" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
@@ -907,26 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/_allbase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="25" column="99" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/static/bill/js/forget_password.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="378">
           <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -941,61 +756,280 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_bill/home_dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="270">
           <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-          <folding />
+          <folding>
+            <marker date="1522287100525" expanded="true" signature="123:246" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_apps/home.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+          <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
           <folding>
-            <element signature="e#15#51#0" expanded="true" />
+            <element signature="e#15#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4872">
-          <caret line="285" column="15" lean-forward="false" selection-start-line="285" selection-start-column="15" selection-end-line="285" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="108">
+          <caret line="303" column="10" lean-forward="true" selection-start-line="303" selection-start-column="10" selection-end-line="303" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="270">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/b.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/s.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/_allbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="99" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="122" column="45" lean-forward="false" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cpts_769_bgi/assets/js/jquery-1.10.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cpts_769_bgi/assets/js/jquery.metisMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cpts_769_bgi/assets/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cpts_769_bgi/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/jquery-1.10.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/jquery.dataTables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10339" column="46" lean-forward="false" selection-start-line="10339" selection-start-column="46" selection-end-line="10339" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/bill_type.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="82" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="17" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/jquery.metisMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/morris/morris-0.4.3.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-514">
+          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="38" />
+          <folding>
+            <marker date="1522314846370" expanded="true" signature="5464:5470" ph="←" />
+            <marker date="1522314846370" expanded="true" signature="5586:5592" ph="→" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="433">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6010">
+          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/_all_bill_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="110" column="48" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/situation_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bill_models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/sys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/css/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="455" column="7" lean-forward="false" selection-start-line="455" selection-start-column="1" selection-end-line="455" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="210" column="31" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

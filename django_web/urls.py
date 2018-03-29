@@ -26,5 +26,7 @@ urlpatterns = [
     url(r'^check_answer$', home.check_answer, name='check_answer'),
     url(r'^reset_password$', home.reset_password, name='reset_password'),
     url(r'^reset_user_password$', home.reset_user_password, name='reset_user_password'),
-    url(r'^bill$', bill.bill, name='bill')
+    url(r'^bill$', bill.bill, name='bill'),
+    url(r'^detailed$', bill.detailed, name='detailed'),
+    url(r'^get_table_data$', bill.get_table_data, name='get_table_data')
 ]
