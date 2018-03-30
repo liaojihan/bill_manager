@@ -2,25 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0bea6d3-0253-41a0-bd92-3a980d160562" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/page/bill/detailed.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/page/bill/situation_map.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/django_web.iml" afterPath="$PROJECT_DIR$/.idea/django_web.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/django_web/django_apps/type.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/django_web/django_bill/type_dao.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bill_models/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bill_models/migrations/__init__.py" afterPath="$PROJECT_DIR$/templates/static/bill/js/sys.js" />
-      <change beforePath="$PROJECT_DIR$/bill_models/models.py" afterPath="$PROJECT_DIR$/bill_models/models.py" />
       <change beforePath="$PROJECT_DIR$/django_web/django_apps/bill.py" afterPath="$PROJECT_DIR$/django_web/django_apps/bill.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/django_apps/home.py" afterPath="$PROJECT_DIR$/django_web/django_apps/home.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
       <change beforePath="$PROJECT_DIR$/django_web/settings.py" afterPath="$PROJECT_DIR$/django_web/settings.py" />
       <change beforePath="$PROJECT_DIR$/django_web/urls.py" afterPath="$PROJECT_DIR$/django_web/urls.py" />
       <change beforePath="$PROJECT_DIR$/templates/_all_bill_base.html" afterPath="$PROJECT_DIR$/templates/_all_bill_base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/page/bill/detailed.html" afterPath="$PROJECT_DIR$/templates/page/bill/detailed.html" />
       <change beforePath="$PROJECT_DIR$/templates/page/bill/overview.html" afterPath="$PROJECT_DIR$/templates/page/bill/overview.html" />
-      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" afterPath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/templates/static/manage/b.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/static/manage/form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/static/manage/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/static/manage/s.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/static/manage/table.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap-theme.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap-theme.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap-theme.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/js/bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/bootstrap/js/npm.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/js/npm.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/css/form-elements.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/css/form-elements.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/css/style.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/fonts/FontAwesome.otf" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/animated.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/bordered-pulled.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/core.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/fixed-width.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/font-awesome.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/icons.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/larger.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/list.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/mixins.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/path.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/rotated-flipped.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/stacked.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/less/variables.less" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_animated.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_bordered-pulled.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_core.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_fixed-width.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_icons.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_larger.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_list.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_mixins.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_path.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_rotated-flipped.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_stacked.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/_variables.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/font-awesome/scss/font-awesome.scss" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-114-precomposed.png" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-114-precomposed.png" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-144-precomposed.png" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-144-precomposed.png" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-57-precomposed.png" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-57-precomposed.png" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-72-precomposed.png" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/ico/apple-touch-icon-72-precomposed.png" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/ico/favicon.png" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/ico/favicon.png" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/img/backgrounds/5.jpg" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/img/backgrounds/5.jpg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/img/backgrounds/6.jpg" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/img/backgrounds/6.jpg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/img/backgrounds/7.jpg" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/img/backgrounds/7.jpg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/jquery-1.11.1.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/js/jquery-1.11.1.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/js/jquery-1.11.1.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/jquery.backstretch.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/js/jquery.backstretch.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/jquery.backstretch.min.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/js/jquery.backstretch.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/placeholder.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/js/placeholder.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/scripts.js" afterPath="$PROJECT_DIR$/static/azds_login-forms/form-2/assets/js/scripts.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bill/js/bill_login.js" afterPath="$PROJECT_DIR$/static/bill/js/bill_login.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bill/js/forget_password.js" afterPath="$PROJECT_DIR$/static/bill/js/forget_password.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bill/js/sys.js" afterPath="$PROJECT_DIR$/static/bill/js/sys.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-grid.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-grid.css.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-grid.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.css.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.min.css.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap-reboot.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/css/bootstrap.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.js.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.js.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.js.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.js.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/bootstrap-4.0.0-dist/js/bootstrap.min.js.map" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0-dist/js/bootstrap.min.js.map" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/layer.js" afterPath="$PROJECT_DIR$/static/layer/layer.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/mobile/layer.js" afterPath="$PROJECT_DIR$/static/layer/mobile/layer.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/mobile/need/layer.css" afterPath="$PROJECT_DIR$/static/layer/mobile/need/layer.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/skin/default/icon-ext.png" afterPath="$PROJECT_DIR$/static/layer/skin/default/icon-ext.png" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/skin/default/icon.png" afterPath="$PROJECT_DIR$/static/layer/skin/default/icon.png" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/skin/default/layer.css" afterPath="$PROJECT_DIR$/static/layer/skin/default/layer.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/skin/default/loading-0.gif" afterPath="$PROJECT_DIR$/static/layer/skin/default/loading-0.gif" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/skin/default/loading-1.gif" afterPath="$PROJECT_DIR$/static/layer/skin/default/loading-1.gif" />
+      <change beforePath="$PROJECT_DIR$/templates/static/layer/skin/default/loading-2.gif" afterPath="$PROJECT_DIR$/static/layer/skin/default/loading-2.gif" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/manage/assets/css/bootstrap-theme.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/manage/assets/css/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/css/custom-styles.css" afterPath="$PROJECT_DIR$/static/manage/assets/css/custom-styles.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/css/font-awesome.css" afterPath="$PROJECT_DIR$/static/manage/assets/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.eot" afterPath="$PROJECT_DIR$/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.eot" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.svg" afterPath="$PROJECT_DIR$/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.svg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.ttf" afterPath="$PROJECT_DIR$/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.ttf" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.woff" afterPath="$PROJECT_DIR$/static/manage/assets/font-awesome/fonts/fontawesome-webfontba72.woff" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/font-awesome/fonts/fontawesome-webfontd41d.eot" afterPath="$PROJECT_DIR$/static/manage/assets/font-awesome/fonts/fontawesome-webfontd41d.eot" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/manage/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/manage/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/manage/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/manage/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/fonts/glyphicons-halflings-regulard41d.eot" afterPath="$PROJECT_DIR$/static/manage/assets/fonts/glyphicons-halflings-regulard41d.eot" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/img/bg-img.jpg" afterPath="$PROJECT_DIR$/static/manage/assets/img/bg-img.jpg" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/README.md" afterPath="$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/README.md" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/chart.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/chart.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/cssCharts.css" afterPath="$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/cssCharts.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/index - Copy.html" afterPath="$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/index - Copy.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/index.html" afterPath="$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/jquery.chart.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/jquery.chart.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/jquery.chart.min.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/jquery.chart.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/chart-data.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/chart-data.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/chart.min.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/chart.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/custom-scripts.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/custom-scripts.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/custom.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/custom.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.css" afterPath="$PROJECT_DIR$/static/manage/assets/js/dataTables/dataTables.bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/dataTables/dataTables.bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/dataTables/jquery.dataTables.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/easypiechart-data.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/easypiechart-data.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/easypiechart.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/easypiechart.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/jquery-1.10.2.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/jquery.metisMenu.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/jquery.metisMenu.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/morris/morris-0.4.3.min.css" afterPath="$PROJECT_DIR$/static/manage/assets/js/morris/morris-0.4.3.min.css" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/morris/morris.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/morris/morris.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/assets/js/morris/raphael-2.1.0.min.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/morris/raphael-2.1.0.min.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/contact/contact_me.js" afterPath="$PROJECT_DIR$/static/manage/contact/contact_me.js" />
+      <change beforePath="$PROJECT_DIR$/templates/static/manage/contact/jqBootstrapValidation.js" afterPath="$PROJECT_DIR$/static/manage/contact/jqBootstrapValidation.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,11 +178,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_web/urls.py">
+      <file leaf-file-name="_all_bill_base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/_all_bill_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+            <state relative-caret-position="-3256">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -64,8 +191,8 @@
       <file leaf-file-name="bill.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="918">
+              <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
               <folding>
                 <element signature="e#15#73#0" expanded="true" />
               </folding>
@@ -73,71 +200,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_web/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="349">
+              <caret line="122" column="34" lean-forward="true" selection-start-line="122" selection-start-column="34" selection-end-line="122" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detailed.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_web/django_apps/home.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+              <folding>
+                <element signature="e#15#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailed.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6010">
-              <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="427">
+              <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+              <folding>
+                <element signature="e#643#649#0#HTML" expanded="true" />
+                <element signature="e#649#655#0#HTML" expanded="true" />
+                <element signature="e#655#661#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_all_bill_base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/_all_bill_base.html">
+      <file leaf-file-name="table.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="110" column="48" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="situation_map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page/bill/situation_map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-972">
+            <state relative-caret-position="-27610">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bill_models/models.py">
+      <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/static/bill/js/sys.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom-scripts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/custom-scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="210" column="31" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="31" />
+            <state relative-caret-position="27">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,21 +261,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>or lo</find>
-      <find>csrf</find>
-      <find>DATABASES</find>
-      <find>INSTALLED_APPS</find>
-      <find>data</find>
-      <find>check_answer</find>
-      <find>ins</find>
       <find>now</find>
       <find>check_sub</find>
       <find>USE_TZ</find>
@@ -186,6 +292,13 @@
       <find>Previous</find>
       <find>previous</find>
       <find>dataTables-example</find>
+      <find>SESSION</find>
+      <find>SESSIO</find>
+      <find>Kitchen Sink</find>
+      <find>Buttons With Icons</find>
+      <find>warning</find>
+      <find>Click</find>
+      <find>Modals Example</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,22 +327,26 @@
         <option value="$PROJECT_DIR$/templates/static/bill/js/bill_login.js" />
         <option value="$PROJECT_DIR$/templates/static/cpts_769_bgi/index.html" />
         <option value="$PROJECT_DIR$/templates/_allbase.html" />
-        <option value="$PROJECT_DIR$/django_web/django_apps/home.py" />
-        <option value="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
-        <option value="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
         <option value="$PROJECT_DIR$/bill_models/models.py" />
         <option value="$PROJECT_DIR$/templates/static/manage/table.html" />
         <option value="$PROJECT_DIR$/templates/static/manage/form.html" />
-        <option value="$PROJECT_DIR$/django_web/settings.py" />
         <option value="$PROJECT_DIR$/templates/page/bill/bill_type.html" />
         <option value="$USER_HOME$/Downloads/cpts_769_bgi/table.html" />
-        <option value="$PROJECT_DIR$/templates/page/bill/overview.html" />
         <option value="$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js" />
         <option value="$PROJECT_DIR$/templates/static/bill/js/sys.js" />
-        <option value="$PROJECT_DIR$/templates/page/bill/detailed.html" />
-        <option value="$PROJECT_DIR$/templates/_all_bill_base.html" />
+        <option value="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
+        <option value="$PROJECT_DIR$/templates/static/cpts_769_bgi/ui-elements.html" />
+        <option value="$PROJECT_DIR$/templates/page/bill/overview.html" />
+        <option value="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
         <option value="$PROJECT_DIR$/django_web/urls.py" />
+        <option value="$PROJECT_DIR$/django_web/django_apps/type.py" />
+        <option value="$PROJECT_DIR$/django_web/django_bill/type_dao.py" />
+        <option value="$PROJECT_DIR$/templates/static/page/bill/detailed.html" />
         <option value="$PROJECT_DIR$/django_web/django_apps/bill.py" />
+        <option value="$PROJECT_DIR$/django_web/django_apps/home.py" />
+        <option value="$PROJECT_DIR$/django_web/settings.py" />
+        <option value="$PROJECT_DIR$/templates/_all_bill_base.html" />
+        <option value="$PROJECT_DIR$/templates/page/bill/detailed.html" />
       </list>
     </option>
   </component>
@@ -268,6 +385,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,28 +396,6 @@
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="bill_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="django_apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="django_bill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -307,34 +403,6 @@
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="bill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bill" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
@@ -346,7 +414,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,18 +423,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github_file\bill_manager\templates\page\bill" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_file\bill_manager" />
+      <recent name="D:\github_file\bill_manager\templates" />
       <recent name="D:\github_file\bill_manager\templates\static" />
+      <recent name="D:\github_file\bill_manager\templates\page\error" />
+      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\page\login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_file\bill_manager\templates\static" />
+      <recent name="D:\github_file\bill_manager\templates\page\bill" />
       <recent name="D:\github_file\bill_manager\templates\page\login" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static\azds_login-forms\form-2\assets\img\backgrounds" />
       <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\static" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\github_file\bill_manager\templates\page\error" />
-      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates\page\login" />
-      <recent name="C:\Users\LJH\PycharmProjects\django_web\templates" />
-      <recent name="C:\Users\LJH\PycharmProjects\django_web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -655,21 +723,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3821656" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2687704" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24265505" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29053319" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18123667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18496802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43167028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43090317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@django_web" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61930585" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -688,15 +756,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-762174762/datetime.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/utils/timezone.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/db/models/base.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/models.py" />
-    <entry file="file://$PROJECT_DIR$/templates/page/login/reset_password.html" />
-    <entry file="file://$PROJECT_DIR$/templates/page/login/check_answer.html" />
-    <entry file="file://D:/ljh_file/ANSU-Asterism(14)/ANSU-Asterism/src/main/webapp/login.jsp" />
-    <entry file="file://D:/ljh_file/ANSU-Asterism(14)/ANSU-Asterism/src/main/webapp/WEB-INF/public_page/public_import.jsp" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/db/models/fields/__init__.py" />
     <entry file="file://$PROJECT_DIR$/templates/page/login/forget_password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -704,45 +763,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/bill_login.js">
+    <entry file="file://$PROJECT_DIR$/static/bill/js/bill_login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/easypiechart.js">
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/easypiechart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-324">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/Lightweight-Chart/jquery.chart.js">
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/Lightweight-Chart/jquery.chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-729">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/ico/favicon.png">
+    <entry file="file://$PROJECT_DIR$/static/azds_login-forms/form-2/assets/ico/favicon.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1371">
-          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/forget_password.js">
+    <entry file="file://$PROJECT_DIR$/static/bill/js/forget_password.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,85 +800,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-22">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/django_bill/home_dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-          <folding>
-            <marker date="1522287100525" expanded="true" signature="123:246" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/django_apps/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding>
-            <element signature="e#15#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="303" column="10" lean-forward="true" selection-start-line="303" selection-start-column="10" selection-end-line="303" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/b.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/s.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/index.html" />
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/table.html" />
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/form.html" />
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/b.jpg" />
+    <entry file="file://$PROJECT_DIR$/templates/static/manage/s.jpg" />
     <entry file="file://$PROJECT_DIR$/templates/_allbase.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="25" column="99" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="122" column="45" lean-forward="false" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,9 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-807">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,9 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-162">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,11 +840,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/jquery-1.10.2.js">
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/jquery-1.10.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/dataTables/jquery.dataTables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10339" column="46" lean-forward="false" selection-start-line="10339" selection-start-column="46" selection-end-line="10339" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/form.html" />
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/bill_type.html" />
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/jquery.metisMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/morris/morris-0.4.3.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/dataTables/dataTables.bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-514">
+          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/css/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="455" column="7" lean-forward="false" selection-start-line="455" selection-start-column="1" selection-end-line="455" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="210" column="31" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bill/js/sys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/situation_map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -876,160 +923,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/jquery.dataTables.js">
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/signing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10339" column="46" lean-forward="false" selection-start-line="10339" selection-start-column="46" selection-end-line="10339" selection-end-column="46" />
+        <state relative-caret-position="193">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/form.html">
+    <entry file="file://$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
+        <state relative-caret-position="172">
+          <caret line="1868" column="2" lean-forward="false" selection-start-line="1868" selection-start-column="2" selection-end-line="1868" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="82" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Desktop/ANSU-Asterism(14)/ANSU-Asterism/src/main/webapp/WEB-INF/views/person.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="320" column="51" lean-forward="true" selection-start-line="320" selection-start-column="32" selection-end-line="320" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bill_models/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1165">
+          <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/bill_type.html">
+    <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+        <state relative-caret-position="324">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#644#676#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bill_models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/django_bill/type_dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="74" lean-forward="true" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/django_apps/type.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#73#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/django_bill/home_dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1809">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#50#0" expanded="false" />
+            <marker date="1522380227051" expanded="true" signature="123:246" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/ui-elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="699" column="28" lean-forward="false" selection-start-line="699" selection-start-column="28" selection-end-line="715" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page/bill/table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="82" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="17" selection-end-column="82" />
+        <state relative-caret-position="216">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/jquery.metisMenu.js">
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        <state relative-caret-position="27">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-27610">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/morris/morris-0.4.3.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/dataTables/dataTables.bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="38" />
-          <folding>
-            <marker date="1522314846370" expanded="true" signature="5464:5470" ph="←" />
-            <marker date="1522314846370" expanded="true" signature="5586:5592" ph="→" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="918">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
+    <entry file="file://$PROJECT_DIR$/django_web/django_apps/home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
+    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6010">
-          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        <state relative-caret-position="349">
+          <caret line="122" column="34" lean-forward="true" selection-start-line="122" selection-start-column="34" selection-end-line="122" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/_all_bill_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="110" column="48" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="48" />
+        <state relative-caret-position="-3256">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/situation_map.html">
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/bill/js/sys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/css/custom-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="455" column="7" lean-forward="false" selection-start-line="455" selection-start-column="1" selection-end-line="455" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/static/manage/assets/js/custom-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="210" column="31" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="427">
+          <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+          <folding>
+            <element signature="e#643#649#0#HTML" expanded="true" />
+            <element signature="e#649#655#0#HTML" expanded="true" />
+            <element signature="e#655#661#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

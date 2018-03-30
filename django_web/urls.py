@@ -14,11 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django_web.django_apps import home, bill
+from django_web.django_apps import home, bill, type
 
 urlpatterns = [
     url(r'^home$', home.home, name='home'),
     url(r'^user_login$', home.user_login, name='user_login'),
+    url(r'^logout$', home.logout, name='logout'),
     url(r'^forget$', home.forget, name='forget'),
     url(r'^user_add$', home.user_add, name='user_add'),
     url(r'^confirm_username$', home.confirm_username, name='confirm_username'),
@@ -28,5 +29,6 @@ urlpatterns = [
     url(r'^reset_user_password$', home.reset_user_password, name='reset_user_password'),
     url(r'^bill$', bill.bill, name='bill'),
     url(r'^detailed$', bill.detailed, name='detailed'),
-    url(r'^get_table_data$', bill.get_table_data, name='get_table_data')
+    url(r'^get_table_data$', bill.get_table_data, name='get_table_data'),
+    url(r'^get_type$', type.get_type, name='get_type')
 ]

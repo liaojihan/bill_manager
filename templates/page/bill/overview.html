@@ -2,7 +2,7 @@
         {% block bill_base %}
 		  <div class="header">
                         <h1 class="page-header">
-                            Dashboard <small>Welcome John Doe</small>
+                            总览 <small>欢迎用户:{{ user_name }}</small>
                         </h1>
 						<ol class="breadcrumb">
 					  <li><a href="bill">总览</a></li>
@@ -284,5 +284,9 @@
                 <!-- /. ROW  -->
             </div>
 
-
         {% endblock %}
+        <script>
+            $(function () {
+
+            });
+        </script>

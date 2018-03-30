@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="{% static "manage/assets/js/Lightweight-Chart/cssCharts.css"%}">
     <!-- TABLE STYLES-->
     <link href="{% static "manage/assets/js/dataTables/dataTables.bootstrap.css"%}" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -45,12 +47,12 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> xx占位xx</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> xx占位xx</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> 注销登录</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -63,10 +65,10 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li>
-                        <a href="bill" ><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a href="bill" ><i class="fa fa-dashboard"></i> 总览</a>
                     </li>
                     <li>
-                        <a href="detailed"><i class="fa fa-table"></i> Responsive Tables</a>
+                        <a href="detailed"><i class="fa fa-table"></i> 明细</a>
                     </li>
                 </ul>
             </div>
@@ -86,53 +88,52 @@
         </div>
         <!-- /. PAGE WRAPPER  -->
     <!-- /. WRAPPER  -->
-        <!-- JS Scripts-->
-        <!-- jQuery Js -->
-        <script src="{% static "manage/assets/js/jquery-1.10.2.js"%}"></script>
-        <!-- Bootstrap Js -->
-        <script src="{% static "manage/assets/js/bootstrap.min.js"%}"></script>
-         <!-- DATA TABLE SCRIPTS -->
-        <script src="{% static "manage/assets/js/dataTables/jquery.dataTables.js"%}"></script>
-        <script src="{% static "manage/assets/js/dataTables/dataTables.bootstrap.js"%}"></script>
-        <script src="{% static "bill/js/sys.js" %}"></script>
-        <script>
-            $(document).ready(function () {
-                $('#dataTables-example').dataTable(
-                    {
-                        "serverSide": true,
-                        "retrieve": true,
-                        "processing": true,
-                        "ordering": false,
-                        "searching": false,
-                        "pagingType": "input",
-                        "lengthMenu": [10, 20, 30, 40],
-                        language: dtLanguage,
-                        ajax: {
-                            url: 'get_table_data',
-                            type: 'get'
-                        },
-                        columnDefs:[],
-                        columns: []
-                    }
-                );
+
+    {% block ex_script %}
+    {% endblock %}
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="{% static "manage/assets/js/jquery-1.10.2.js"%}"></script>
+    <!-- Bootstrap Js -->
+    <script src="{% static "manage/assets/js/bootstrap.min.js"%}"></script>
+     <!-- DATA TABLE SCRIPTS -->
+    <script src="{% static "manage/assets/js/dataTables/jquery.dataTables.js"%}"></script>
+    <script src="{% static "manage/assets/js/dataTables/dataTables.bootstrap.js"%}"></script>
+    <script src="{% static "bill/js/sys.js" %}"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable({
+                "serverSide": true,
+                "retrieve": true,
+                "processing": true,
+                "ordering": false,
+                "searching": false,
+                "pagingType": "input",
+                "lengthMenu": [10, 20, 30, 40],
+                language: dtLanguage,
+                ajax: {
+                    url: 'get_table_data',
+                    type: 'get'
+                },
+                columnDefs:[],
+                columns: []
             });
-        </script>
-        <!-- Metis Menu Js -->
-        <script src="{% static "manage/assets/js/jquery.metisMenu.js"%}"></script>
-        <!-- Morris Chart Js -->
-        <script src="{% static "manage/assets/js/morris/raphael-2.1.0.min.js"%}"></script>
-        <script src="{% static "manage/assets/js/morris/morris.js"%}"></script>
+        });
+    </script>
+    <!-- Metis Menu Js -->
+    <script src="{% static "manage/assets/js/jquery.metisMenu.js"%}"></script>
+    <!-- Morris Chart Js -->
+    <script src="{% static "manage/assets/js/morris/raphael-2.1.0.min.js"%}"></script>
+    <script src="{% static "manage/assets/js/morris/morris.js"%}"></script>
 
 
-        <script src="{% static "manage/assets/js/easypiechart.js"%}"></script>
-        <script src="{% static "manage/assets/js/easypiechart-data.js"%}"></script>
+    <script src="{% static "manage/assets/js/easypiechart.js"%}"></script>
+    <script src="{% static "manage/assets/js/easypiechart-data.js"%}"></script>
 
-         <script src="{% static "manage/assets/js/Lightweight-Chart/jquery.chart.js"%}"></script>
+     <script src="{% static "manage/assets/js/Lightweight-Chart/jquery.chart.js"%}"></script>
 
-        <!-- Custom Js -->
-        <script src="{% static "manage/assets/js/custom-scripts.js"%}"></script>
-
-
+    <!-- Custom Js -->
+    <script src="{% static "manage/assets/js/custom-scripts.js"%}"></script>
 </body>
 
 </html>

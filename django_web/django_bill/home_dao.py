@@ -9,8 +9,8 @@ def user_login(username, user_password):
     except Exception:
         return u'用户信息有误，请检查', 0
     else:
-        user_id = User.objects.filter(user_name=username).first().id
-        return u'1', user_id
+        user_object = User.objects.filter(user_name=username).first()
+        return u'1', user_object
 
 
 def user_add(user_dict):

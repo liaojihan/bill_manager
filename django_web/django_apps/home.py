@@ -1,5 +1,5 @@
 # coding=utf-8
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, render_to_response
 from django_web.django_bill import home_dao
 import json
@@ -14,13 +14,15 @@ def home(request):
 
 def user_login(request):
     """用户登录"""
-    user_dict = request.GET
-    if user_dict:
-        user_name = user_dict['username']
-        user_password = user_dict['password']
-        result, user_id = home_dao.user_login(user_name, user_password)
+    user_request = request.GET
+    if user_request:
+        user_name = user_request['username']
+        user_password = user_request['password']
+        result, user_object = home_dao.user_login(user_name, user_password)
         if result == u'1':
-            request.session['user_id'] = user_id
+            user_dict = {'user_id': user_object.id, 'user_name': user_object.user_name}
+            request.session['user_dict'] = user_dict
+            request.session.set_expiry(0)
         return HttpResponse(json.dumps(result), content_type=result_type)
 
 
@@ -85,3 +87,9 @@ def reset_user_password(request):
     if result == u'1':
         request.session.clear()
     return HttpResponse(json.dumps(result), content_type=result_type)
+
+
+def logout(request):
+    """注销登录"""
+    request.session.clear()
+    return HttpResponseRedirect('home')
