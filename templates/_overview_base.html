@@ -89,37 +89,12 @@
         <!-- /. PAGE WRAPPER  -->
     <!-- /. WRAPPER  -->
 
-    {% block ex_script %}
-    {% endblock %}
+
     <!-- JS Scripts-->
     <!-- jQuery Js -->
     <script src="{% static "manage/assets/js/jquery-1.10.2.js"%}"></script>
     <!-- Bootstrap Js -->
     <script src="{% static "manage/assets/js/bootstrap.min.js"%}"></script>
-     <!-- DATA TABLE SCRIPTS -->
-    <script src="{% static "manage/assets/js/dataTables/jquery.dataTables.js"%}"></script>
-    <script src="{% static "manage/assets/js/dataTables/dataTables.bootstrap.js"%}"></script>
-    <script src="{% static "bill/js/sys.js" %}"></script>
-    <script>
-        $(document).ready(function () {
-            $('#dataTables-example').dataTable({
-                "serverSide": true,
-                "retrieve": true,
-                "processing": true,
-                "ordering": false,
-                "searching": false,
-                "pagingType": "input",
-                "lengthMenu": [10, 20, 30, 40],
-                language: dtLanguage,
-                ajax: {
-                    url: 'get_table_data',
-                    type: 'get'
-                },
-                columnDefs:[],
-                columns: []
-            });
-        });
-    </script>
     <!-- Metis Menu Js -->
     <script src="{% static "manage/assets/js/jquery.metisMenu.js"%}"></script>
     <!-- Morris Chart Js -->
@@ -131,9 +106,11 @@
     <script src="{% static "manage/assets/js/easypiechart-data.js"%}"></script>
 
      <script src="{% static "manage/assets/js/Lightweight-Chart/jquery.chart.js"%}"></script>
-
     <!-- Custom Js -->
-    <script src="{% static "manage/assets/js/custom-scripts.js"%}"></script>
+    <script src="{% static "manage/assets/js/custom-scripts.js" %}"></script>
+    <!-- Layer -->
+    <script src="{% static "layer/layer.js" %}"></script>
+
 </body>
 
 </html>

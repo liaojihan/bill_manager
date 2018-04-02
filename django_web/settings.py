@@ -25,7 +25,7 @@ SECRET_KEY = 'nwv!%3xm*6%bi5+h9@(61fxdx6s1#5w=7ht8htru7m=ke8#ey$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -117,14 +117,11 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+# 静态资源配置
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
-# 页面权限
-LOGIN_URL = '/home'
 
 # 设置session过期策略
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True

@@ -5,6 +5,8 @@ from django_web.django_bill.bill_dao import GetBillData
 from django_web.django_bill import bill_dao
 import json
 
+result_type = 'application/json'
+
 
 def bill(request):
     """初始化账单总览页面"""
@@ -17,7 +19,7 @@ def bill(request):
 
 
 def get_bill_data(request):
-    user_id = request.session.get('user_id', '')
+    user_id = request.session.get('user_dict', '').get('user_id', '')
     if user_id:
         bill_object = GetBillData(user_id=user_id)
         bill_type = bill_object.get_bill_data()
@@ -38,4 +40,17 @@ def detailed(request):
 
 
 def get_table_data(request):
-    return None
+    result, result_count = bill_dao.get_bill_data()
+    data = {
+        "recordsTotal": result_count,
+        "recordsFiltered": result_count,
+        "data": result
+    }
+    return HttpResponse(json.dumps(data), content_type=result_type)
+
+
+def bill_data_add(request):
+    user_id = request.session.get('user_dict', '')['user_id']
+    bill_request = request.POST
+    result = bill_dao.bill_add(bill_request, user_id)
+    return HttpResponse(json.dumps(result), content_type=result_type)

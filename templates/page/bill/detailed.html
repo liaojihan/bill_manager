@@ -1,8 +1,9 @@
-{% extends '_all_bill_base.html' %}
+
+{% extends '_detailed_base.html' %}
     {% block bill_base %}
         <div class="header">
             <h1 class="page-header">
-                明细 <small>欢迎用户:{{ user_name }}</small>
+                明细(单位:元) <small>欢迎用户:{{ user_name }}</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="detailed">明细</a></li>
@@ -28,29 +29,31 @@
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>消费分类</label>
-                                                    <select class="form-control" id="bill_type" name="type">
-                                                    </select>
-                                                    <label>消费金额</label>
-                                                    <input class="form-control" id="amount" name="amount" type="text">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label>日期</label>
-                                                    <input class="form-control" id="date" name="create_time" type="text">
-                                                    <label>备注</label>
-                                                    <input class="form-control" id="remark" name="remark" type="text">
-                                                </div>
+                                                <form id="bill_add_form">
+                                                    <div class="col-md-6">
+                                                        <label>消费分类</label>
+                                                        <select class="form-control" id="bill_type" name="type">
+                                                        </select>
+                                                        <label>消费金额</label>
+                                                        <input class="form-control" id="amount" name="amount" type="text">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label>日期</label>
+                                                        <input class="form-control" id="date" name="create_time" type="text">
+                                                        <label>备注</label>
+                                                        <input class="form-control" id="remark" name="remark" type="text">
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-success">保存</button>
+                                            <button type="button" class="btn btn-success" id="save_bill">保存</button>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                                         </div>
                                     </div>
                                  </div>
                                 </div>
-                                <button class="btn btn-danger"><i class="fa fa-trash-o"></i> 删一单</button>
+                                <button class="btn btn-danger" onclick="remove_bill()"><i class="fa fa-trash-o"></i> 删一单</button>
 
                             </div>
                         <div class="panel-body">
@@ -78,34 +81,144 @@
                 <!-- /. ROW  -->
 
         </div>
-{#        <script>#}
-{#            $(document).read(function () {#}
-{#                get_bill_type();#}
-{#            });#}
-{##}
-{#            function get_bill_type() {#}
-{#                $.ajax({#}
-{#                    url: 'get_type',#}
-{#                    dataType: 'json',#}
-{#                    type: 'get',#}
-{#                    success: function (data) {#}
-{#                        if (data){#}
-{#                            $('#bill_type').append(data);#}
-{#                        }#}
-{#                    }#}
-{#                });#}
-{#            }#}
-{##}
-{##}
-{#            function refresh_data() {#}
-{#                window.location.href = 'detailed';#}
-{#            }#}
-{#        </script>#}
 
-    {% endblock %}
+    {% endblock bill_base%}
 
-    {% block ex_script %}
-        <script src="{% static "manage/assets/js/jquery-1.10.2.js"%}"></script>
+    {% block js_script %}
+        <script>
+            $(function () {
+                get_bill_type();
+            });
+
+            function get_bill_type() {
+                $.ajax({
+                    url: 'get_type',
+                    dataType: 'json',
+                    type: 'get',
+                    success: function (data) {
+                        if (data){
+                            $('#bill_type').append(data);
+                        }
+                    }
+                });
+            }
+            $(document).ready(function () {
+                $('#dataTables-example').DataTable({
+                    "serverSide": true,
+                    "retrieve": true,
+                    "processing": true,
+                    "ordering": false,
+                    "searching": false,
+                    "pagingType": "full_numbers",
+                    "lengthMenu": [10, 20, 30, 40],
+                    language: dtLanguage,
+                    "ajax": {
+                        url: 'get_table_data',
+                        type: 'get'
+                    },
+                    columnDefs:[
+                        {
+                            "targets": [5],
+                            data: "id",
+                            "render": function (data, type, row) {
+                                return '<a href="#" onclick="detailed_bill(' + row['id'] + ')" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="fa fa-paperclip"></i>详情</a>&nbsp;&nbsp;' +
+                                        '<a href="javascript:void(0)" onclick="edit_bill('+ row['id'] +')" class="btn btn-primary btn-xs" role="button"><i class="fa fa-edit"></i>编&nbsp;辑</a>'
+                            }
+                        }
+                    ],
+                    columns: [
+                        {data: 'select'},
+                        {data: 'type'},
+                        {data: 'amount'},
+                        {data: 'date'},
+                        {data: 'remark'}
+                    ]
+                });
+            });
+
+
+            function func_check_all() {
+                if ($("#checkall").is(':checked') == true) {
+                    $('.select').each(function () {
+                        $(this).prop('checked', true);
+                        // $(this).attr('checked', true);
+                        $('.select').on("click", func_add(this));
+                    });
+                } else {
+                    $('.select').each(function () {
+                        $(this).prop('checked', false);
+                        // $(this).attr('checked', false);
+                        $('.select').on("click", func_remove(this));
+                    });
+                }
+            }
+
+            function func_add(doc) {
+                $(doc).parent().parent().addClass('selected');
+            }
+
+            function func_remove(doc) {
+                $(doc).parent().parent().removeClass('selected');
+            }
+
+
+            function refresh_data(){
+                window.location.href = 'detailed';
+            }
+
+            //记一笔
+            $(document).on('click', '#save_bill',  function () {
+                console.log('-==--==-=--=');
+                var amount = $('#amount').val();
+                var date = $('#date').val();
+                var remark = $('#remark').val().trim();
+                if (amount.length === 0 || amount === ""){
+                    layer.msg('请输入金额');
+                    $('#amount').focus();
+                    return;
+                }
+                if (date.length === 0 || date === ""){
+                    layer.msg('请选择日期');
+                    $('#date').focus();
+                    return;
+                }
+                if (remark.length === 0 || remark === ""){
+                    layer.msg('请输入备注');
+                    $('#remark').focus();
+                    return;
+                }
+                $.ajax({
+                    url: 'bill_data_add',
+                    data: $('#bill_add_form').serializeArray(),
+                    dataType: 'json',
+                    type: 'POST',
+                    success: function (data) {
+                        if (data === '1'){
+                            layer.msg('记录成功');
+                            $('#addBill').modal('hide');
+                            $('#dataTables-example').DataTable().draw(false);
+                            $('#amount').val('');
+                            $('#date').val('');
+                            $('#remark').val('');
+                        }else {
+                            layer.msg(data);
+                        }
+                    }
+                });
+            });
+
+            //删一单
+            function remove_bill() {
+                var table = $('#dataTables-example').DataTable();
+                var data = table.rows('.selected').data();
+                var bill_id = [];
+                for (var i=0 ; i < data.length ; i++) {
+                    var id = data[i]['id'];
+                    bill_id.push(id);
+                }
+                console.log(bill_id);
+            }
+        </script>
     {% endblock %}
 
 

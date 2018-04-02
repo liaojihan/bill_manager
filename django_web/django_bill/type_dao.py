@@ -1,7 +1,9 @@
+# coding=utf-8
 from bill_models.models import ConsumptionType
 
 
 def get_type_data():
+    """获取所有的账单类型"""
     type_data = ConsumptionType.objects.all()
     result_data = ''
     for data in type_data:

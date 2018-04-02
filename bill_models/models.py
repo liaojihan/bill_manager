@@ -20,6 +20,7 @@ class Bill(models.Model):
     amount = models.IntegerField()
     create_time = models.DateTimeField()
     is_delete = models.BooleanField()
+    remark = models.CharField(max_length=128)
     type = models.ForeignKey('ConsumptionType')
     user = models.ForeignKey('User')
 
