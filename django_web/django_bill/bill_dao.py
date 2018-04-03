@@ -32,11 +32,11 @@ def bill_add(bill_request, user_id):
 
 
 def get_bill_data():
-    result_data = Bill.objects.all()
+    result_data = Bill.objects.filter(is_delete=False)
     bill_list = list()
     for bill in result_data:
         result = dict()
-        result['select'] = "<input id='check' class='select' type='checkbox'></input>"
+        result['select'] = "<input id='check' class='select' type='checkbox' onclick='func_select(this)'></input>"
         result['amount'] = bill.amount
         result['date'] = bill.create_time.strftime("%Y-%m-%d %H:%M:%S")
         result['remark'] = bill.remark
@@ -45,3 +45,14 @@ def get_bill_data():
         bill_list.append(result)
     bill_list_count = len(bill_list)
     return bill_list, bill_list_count
+
+
+def bill_delete(id_array):
+    for array in id_array:
+        try:
+            bill = Bill.objects.get(id=array)
+            bill.is_delete = True
+            bill.save()
+        except Exception:
+            return u'删除失败'
+    return u'1'

@@ -54,3 +54,10 @@ def bill_data_add(request):
     bill_request = request.POST
     result = bill_dao.bill_add(bill_request, user_id)
     return HttpResponse(json.dumps(result), content_type=result_type)
+
+
+def bill_data_delete(request):
+    if request.method == 'POST':
+        id_array = request.POST.getlist('bills_id')
+        result = bill_dao.bill_delete(id_array)
+        return HttpResponse(json.dumps(result), content_type=result_type)

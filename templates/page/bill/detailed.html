@@ -19,7 +19,7 @@
                         <div class="panel-heading">
                             明细统计 &nbsp;&nbsp;&nbsp;
                             <button class="btn btn-warning" onclick="refresh_data()"><i class=" fa fa-refresh "></i> 刷新</button>
-                            <button class="btn btn-success" data-toggle="modal" data-target="#addBill"><i class="fa fa-edit "></i> 记一笔</button>
+                            <button class="btn btn-success" onclick="set_model_attribute()"><i class="fa fa-edit "></i> 记一笔</button>
                             <div class="modal fade" id="addBill" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -35,13 +35,13 @@
                                                         <select class="form-control" id="bill_type" name="type">
                                                         </select>
                                                         <label>消费金额</label>
-                                                        <input class="form-control" id="amount" name="amount" type="text">
+                                                        <input class="form-control" id="amount" name="amount" type="text" placeholder="保留一位小数...">
                                                     </div>
                                                     <div class="col-md-6">
                                                         <label>日期</label>
-                                                        <input class="form-control" id="date" name="create_time" type="text">
+                                                        <input class="form-control" id="date" name="create_time" type="text" placeholder="date time ...">
                                                         <label>备注</label>
-                                                        <input class="form-control" id="remark" name="remark" type="text">
+                                                        <input class="form-control" id="remark" name="remark" type="text" placeholder="remark ...">
                                                     </div>
                                                 </form>
                                             </div>
@@ -136,6 +136,13 @@
                 });
             });
 
+            function set_model_attribute() {
+                $('#addBill').modal({
+                    "backdrop": "static",
+                     "keyboard": false
+                });
+                $('#addBill').modal('show');
+            }
 
             function func_check_all() {
                 if ($("#checkall").is(':checked') == true) {
@@ -160,11 +167,28 @@
             function func_remove(doc) {
                 $(doc).parent().parent().removeClass('selected');
             }
-
+            function func_select(doc) {
+                $(doc).parent().parent().toggleClass('selected');
+            }
 
             function refresh_data(){
                 window.location.href = 'detailed';
             }
+
+            //校检金额
+            $(document).on('blur', '#amount', function () {
+                var amount = $('#amount').val();
+                var re = /^[0-9]+.?[0-9]*$/;
+                if (!re.test(amount)){
+                    layer.msg('请输入数字！');
+                    $('#amount').focus();
+                    return;
+                }
+                if (amount.indexOf('.') > 0){
+                   return;
+                }
+                $('#amount').val(amount + '.0')
+            });
 
             //记一笔
             $(document).on('click', '#save_bill',  function () {
@@ -211,12 +235,33 @@
             function remove_bill() {
                 var table = $('#dataTables-example').DataTable();
                 var data = table.rows('.selected').data();
-                var bill_id = [];
+                var bills_id = [];
                 for (var i=0 ; i < data.length ; i++) {
                     var id = data[i]['id'];
-                    bill_id.push(id);
+                    bills_id.push(id);
                 }
-                console.log(bill_id);
+                if (bills_id.length){
+                    layer.confirm('确认删除吗?', {icon: 3, title: '提示'}, function (index) {
+                        $.ajax({
+                            url: 'bill_data_delete',
+                            dataType: 'json',
+                            traditional: true,
+                            type: 'POST',
+                            data: {'bills_id': bills_id},
+                            success: function (data) {
+                                if (data === '1'){
+                                    layer.msg('操作成功');
+                                    $('#dataTables-example').DataTable().draw(false);
+                                }else {
+                                    layer.msg(data);
+                                }
+                                layer.close(index);
+                            }
+                        });
+                    });
+                }else {
+                    layer.msg('请至少选择一项！');
+                }
             }
         </script>
     {% endblock %}

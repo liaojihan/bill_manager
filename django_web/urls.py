@@ -31,5 +31,6 @@ urlpatterns = [
     url(r'^detailed$', bill.detailed, name='detailed'),
     url(r'^get_table_data$', bill.get_table_data, name='get_table_data'),
     url(r'^get_type$', type.get_type, name='get_type'),
-    url(r'^bill_data_add$', bill.bill_data_add, name='bill_data_add')
+    url(r'^bill_data_add$', bill.bill_data_add, name='bill_data_add'),
+    url(r'^bill_data_delete$', bill.bill_data_delete, name='bill_data_delete')
 ]
