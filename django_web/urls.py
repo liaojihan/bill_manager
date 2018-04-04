@@ -32,5 +32,9 @@ urlpatterns = [
     url(r'^get_table_data$', bill.get_table_data, name='get_table_data'),
     url(r'^get_type$', type.get_type, name='get_type'),
     url(r'^bill_data_add$', bill.bill_data_add, name='bill_data_add'),
-    url(r'^bill_data_delete$', bill.bill_data_delete, name='bill_data_delete')
+    url(r'^bill_data_delete$', bill.bill_data_delete, name='bill_data_delete'),
+    url(r'^type_add$', type.type_add, name='type_add'),
+    url(r'^get_detailed$', bill.get_detailed, name='get_detailed'),
+    url(r'^edit_bill$', bill.edit_bill, name='edit_bill'),
+    url(r'^get_edit_type$', type.get_edit_type, name='get_edit_type')
 ]

@@ -21,7 +21,7 @@ def bill_add(bill_request, user_id):
     consumption_type = ConsumptionType(id=bill_type)
     user = User(id=user_id)
     if bill_type and bill_amount and bill_create_time and bill_remark:
-        bill = Bill(amount=bill_amount, create_time=bill_create_time,
+        bill = Bill(amount=float(bill_amount), create_time=bill_create_time,
                     remark=bill_remark, is_delete=False,
                     type=consumption_type, user=user)
         try:
@@ -31,8 +31,9 @@ def bill_add(bill_request, user_id):
     return u'1'
 
 
-def get_bill_data():
-    result_data = Bill.objects.filter(is_delete=False)
+def get_bill_data(user_id):
+    user_id_object = User(id=user_id)
+    result_data = Bill.objects.filter(is_delete=False, user=user_id_object)
     bill_list = list()
     for bill in result_data:
         result = dict()
@@ -56,3 +57,28 @@ def bill_delete(id_array):
         except Exception:
             return u'删除失败'
     return u'1'
+
+
+def get_detailed_data(bill_id):
+    try:
+        bill = Bill.objects.filter(id=bill_id).first()
+    except Exception:
+        return ''
+    else:
+        bill_dict = {'type': bill.type.name,
+                     'amount': bill.amount,
+                     'date': bill.create_time.strftime("%Y-%m-%d %H:%M:%S"),
+                     'remark': bill.remark}
+        return bill_dict
+
+
+def edit_bill_data(bill_id):
+    try:
+        bill = Bill.objects.filter(id=bill_id).first()
+    except Exception:
+        return ''
+    else:
+        bill_dict = {'amount': bill.amount,
+                     'date': bill.create_time.strftime("%Y-%m-%d %H:%M:%S"),
+                     'remark': bill.remark}
+        return bill_dict

@@ -101,8 +101,7 @@
     <script src="{% static "manage/assets/js/dataTables/jquery.dataTables.js"%}"></script>
     <script src="{% static "manage/assets/js/dataTables/dataTables.bootstrap.js"%}"></script>
     <script src="{% static "bill/js/sys.js" %}"></script>
-    {% block js_script %}
-    {% endblock %}
+    <script src="{% static "bill/js/detailed.js" %}"></script>
     <!-- Layer -->
     <script src="{% static "layer/layer.js" %}"></script>
     <!-- lay date -->
@@ -112,7 +111,12 @@
             elem: '#date',
             type: 'datetime'
         });
+        laydate.render({
+            elem: '#edit_date',
+            type: 'datetime'
+        });
     </script>
+
 </body>
 
 </html>

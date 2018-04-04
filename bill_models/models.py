@@ -17,7 +17,7 @@ class User(models.Model):
 
 class Bill(models.Model):
     """账单"""
-    amount = models.IntegerField()
+    amount = models.CharField(max_length=128)
     create_time = models.DateTimeField()
     is_delete = models.BooleanField()
     remark = models.CharField(max_length=128)
@@ -31,7 +31,6 @@ class Bill(models.Model):
 class ConsumptionType(models.Model):
     """消费类型"""
     name = models.CharField(max_length=128)
-    status = models.CharField(max_length=128)
 
     class Meta:
         db_table = 'consumption_type'

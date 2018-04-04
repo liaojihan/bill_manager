@@ -40,7 +40,9 @@ def detailed(request):
 
 
 def get_table_data(request):
-    result, result_count = bill_dao.get_bill_data()
+    """获取table数据"""
+    user_id = request.session.get('user_dict', '')['user_id']
+    result, result_count = bill_dao.get_bill_data(user_id)
     data = {
         "recordsTotal": result_count,
         "recordsFiltered": result_count,
@@ -50,6 +52,7 @@ def get_table_data(request):
 
 
 def bill_data_add(request):
+    """记一笔"""
     user_id = request.session.get('user_dict', '')['user_id']
     bill_request = request.POST
     result = bill_dao.bill_add(bill_request, user_id)
@@ -57,7 +60,22 @@ def bill_data_add(request):
 
 
 def bill_data_delete(request):
+    """删除/批量删除"""
     if request.method == 'POST':
         id_array = request.POST.getlist('bills_id')
         result = bill_dao.bill_delete(id_array)
         return HttpResponse(json.dumps(result), content_type=result_type)
+
+
+def get_detailed(request):
+    """详情"""
+    bill_id = request.GET.get('id', '')
+    result = bill_dao.get_detailed_data(bill_id)
+    return HttpResponse(json.dumps(result), content_type=result_type)
+
+
+def edit_bill(request):
+    """根据ID获取单个bill对象"""
+    bill_id = request.GET.get('id', '')
+    result = bill_dao.edit_bill_data(bill_id)
+    return HttpResponse(json.dumps(result), content_type=result_type)
