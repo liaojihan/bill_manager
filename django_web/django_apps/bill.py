@@ -79,3 +79,10 @@ def edit_bill(request):
     bill_id = request.GET.get('id', '')
     result = bill_dao.edit_bill_data(bill_id)
     return HttpResponse(json.dumps(result), content_type=result_type)
+
+
+def update_bill(request):
+    """更新bill"""
+    bill_request = request.POST
+    result = bill_dao.update_bill_data(bill_request)
+    return HttpResponse(json.dumps(result), content_type=result_type)

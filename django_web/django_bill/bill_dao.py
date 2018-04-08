@@ -80,5 +80,26 @@ def edit_bill_data(bill_id):
     else:
         bill_dict = {'amount': bill.amount,
                      'date': bill.create_time.strftime("%Y-%m-%d %H:%M:%S"),
-                     'remark': bill.remark}
+                     'remark': bill.remark,
+                     'id': bill_id}
         return bill_dict
+
+
+def update_bill_data(bill_request):
+    bill_id = bill_request.get('id', '')
+    bill_amount = bill_request.get('amount', '')
+    bill_date = bill_request.get('create_time', '')
+    bill_remark = bill_request.get('remark', '')
+    bill_type_id = bill_request.get('type', '')
+    bill_type = ConsumptionType(id=bill_type_id)
+    try:
+        bill_object = Bill.objects.filter(id=bill_id).first()
+        bill_object.amount = bill_amount
+        bill_object.date = bill_date
+        bill_object.remark = bill_remark
+        bill_object.type = bill_type
+        bill_object.save()
+    except Exception, e:
+        print str(e)
+        return u'修改失败，请联系管理员'
+    return u'1'

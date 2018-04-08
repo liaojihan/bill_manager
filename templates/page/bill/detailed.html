@@ -8,11 +8,22 @@
             <ol class="breadcrumb">
                 <li><a href="detailed">明细</a></li>
                 <li class="active">数据</li>
+                <div style="float: right;">
+                    <label>开始时间</label>
+                    <input class="form-group" id="start_time" name="start_time">
+                    <label>结束时间</label>
+                    <input class="form-group" id="end_time" name="end_time">
+                    <label>消费类型</label>
+                    <select class="form-group" id="select_type" name="select_type"></select>
+                    <label></label>
+                    <input class="form-group">
+                </div>
             </ol>
 		</div>
-        <div id="page-inner">
 
+        <div id="page-inner">
             <div class="row">
+
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
@@ -91,8 +102,8 @@
                                                 <input type="checkbox" id="checkall" onclick="func_check_all()"/>
                                             </th>
                                             <th>消费类型</th>
-                                            <th>消费金额</th>
-                                            <th>消费日期</th>
+                                            <th>金额</th>
+                                            <th>日期</th>
                                             <th>备注</th>
                                             <th>操作</th>
                                         </tr>
@@ -151,6 +162,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <form id="bill_edit_form">
+                                <input type="hidden" id="edit_id" name="id">
                                 <div class="col-md-6">
                                     <label>消费分类</label>
                                     <select class="form-control" id="edit_type" name="type">

@@ -21,8 +21,9 @@ $(document).ready(function () {
         "processing": true,
         "ordering": false,
         "searching": false,
+        "autoWidth": false,
         "pagingType": "full_numbers",
-        "lengthMenu": [10, 20, 30, 40],
+        "lengthMenu": [20, 40, 60, 80],
         language: dtLanguage,
         "ajax": {
             url: 'get_table_data',
@@ -96,22 +97,30 @@ function refresh_data(){
 }
 
 //校检金额
-function check_amount(data) {
-
+function check_amount(data, amount_id) {
+    if (data.length === 0 || data === ""){
+        layer.msg('请输入金额');
+        return;
+    }
+    var re = /^[0-9]+.?[0-9]*$/;
+    if (!re.test(data)){
+        layer.msg('金额请输入数字！');
+        $('#' + amount_id).focus();
+        return;
+    } else if (data.indexOf('.') > 0){
+        return;
+    }
+    $('#' + amount_id).val(data + '.0');
 }
 
 $(document).on('blur', '#amount', function () {
     var amount = $('#amount').val();
-    var re = /^[0-9]+.?[0-9]*$/;
-    if (!re.test(amount)){
-        layer.msg('金额请输入数字！');
-        $('#amount').focus();
-        return;
-    }
-    if (amount.indexOf('.') > 0){
-       return;
-    }
-    $('#amount').val(amount + '.0');
+    check_amount(amount, 'amount');
+});
+
+$(document).on('blur', '#edit_amount', function () {
+    var amount = $('#edit_amount').val();
+    check_amount(amount, 'edit_amount');
 });
 
 //记一笔
@@ -148,7 +157,7 @@ $(document).on('click', '#save_bill',  function () {
                 $('#date').val('');
                 $('#remark').val('');
             }else {
-                layer.msg(data);
+                layer.alert(data);
             }
         }
     });
@@ -172,6 +181,8 @@ $(document).on('click', '#save_type', function () {
                 get_bill_type();
                 $('#addType').modal('hide');
                 $('#type_name').val('');
+            }else {
+                layer.msg(data);
             }
         }
     });
@@ -199,7 +210,7 @@ function remove_bill() {
                         layer.msg('操作成功');
                         $('#dataTables-example').DataTable().draw(false);
                     }else {
-                        layer.msg(data);
+                        layer.alert(data);
                     }
                     layer.close(index);
                 }
@@ -245,6 +256,7 @@ function edit_bill(id) {
             $('#edit_amount').val(data['amount']);
             $('#edit_date').val(data['date']);
             $('#edit_remark').val(data['remark']);
+            $('#edit_id').val(data['id']);
             $('#editBill').modal({
                 "backdrop": "static",
                 "keyboard": false
@@ -272,4 +284,32 @@ $(document).on('click', '#save_edit', function () {
     var amount = $('#edit_amount').val().trim();
     var date = $('#edit_date').val();
     var remark = $('#edit_remark').val().trim();
+    if (amount.length === 0 || amount === ""){
+        layer.msg('请输入金额');
+        $('#edit_amount').focus();
+        return;
+    }
+    if (date.length === 0 || date === ""){
+        layer.msg('请选择日期');
+        $('#edit_date').focus();
+        return;
+    }
+    if (remark.length === 0 || remark === ""){
+        layer.msg('请输入备注');
+        $('#edit_remark').focus();
+        return;
+    }
+    $.ajax({
+        url: 'update_bill',
+        dataType: 'json',
+        type: 'POST',
+        data: $('#bill_edit_form').serializeArray(),
+        success: function (data) {
+            if (data === '1'){
+                layer.msg('操作成功');
+                $('#dataTables-example').DataTable().draw(false);
+                $('#editBill').modal('hide');
+            }
+        }
+    });
 });
