@@ -9,13 +9,14 @@ function get_bill_type() {
         type: 'get',
         success: function (data) {
             if (data){
-                $('#bill_type').append(data);
+                $('#bill_type').html(data);
+                $('#select_type').html(data);
             }
         }
     });
 }
 $(document).ready(function () {
-    $('#dataTables-example').DataTable({
+    $('#bill_table').DataTable({
         "serverSide": true,
         "retrieve": true,
         "processing": true,
@@ -23,7 +24,7 @@ $(document).ready(function () {
         "searching": false,
         "autoWidth": false,
         "pagingType": "full_numbers",
-        "lengthMenu": [20, 40, 60, 80],
+        "lengthMenu": [10,20,40,60],
         language: dtLanguage,
         "ajax": {
             url: 'get_table_data',
@@ -35,7 +36,7 @@ $(document).ready(function () {
                 data: "id",
                 "render": function (data, type, row) {
                     return '<a href="#" onclick="detailed_bill(' + row['id'] + ')" class="btn btn-default btn-xs"><i class="fa fa-paperclip"></i>&nbsp;&nbsp;看一看</a>&nbsp;&nbsp;' +
-                            '<a href="javascript:void(0)" onclick="edit_bill('+ row['id'] +')" class="btn btn-primary btn-xs" role="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;改一改</a>'
+                            '<a href="javascript:void(0)" onclick="edit_bill('+ row['id'] +')" class="btn btn-success btn-xs" role="button"><i class="fa fa-cog"></i>&nbsp;&nbsp;改一改</a>'
                 }
             }
         ],
@@ -152,7 +153,7 @@ $(document).on('click', '#save_bill',  function () {
             if (data === '1'){
                 layer.msg('记录成功');
                 $('#addBill').modal('hide');
-                $('#dataTables-example').DataTable().draw(false);
+                $('#bill_table').DataTable().draw(false);
                 $('#amount').val('');
                 $('#date').val('');
                 $('#remark').val('');
@@ -190,7 +191,7 @@ $(document).on('click', '#save_type', function () {
 
 //删一单
 function remove_bill() {
-    var table = $('#dataTables-example').DataTable();
+    var table = $('#bill_table').DataTable();
     var data = table.rows('.selected').data();
     var bills_id = [];
     for (var i=0 ; i < data.length ; i++) {
@@ -208,7 +209,7 @@ function remove_bill() {
                 success: function (data) {
                     if (data === '1'){
                         layer.msg('操作成功');
-                        $('#dataTables-example').DataTable().draw(false);
+                        $('#bill_table').DataTable().draw(false);
                     }else {
                         layer.alert(data);
                     }
@@ -307,9 +308,26 @@ $(document).on('click', '#save_edit', function () {
         success: function (data) {
             if (data === '1'){
                 layer.msg('操作成功');
-                $('#dataTables-example').DataTable().draw(false);
+                $('#bill_table').DataTable().draw(false);
                 $('#editBill').modal('hide');
             }
         }
     });
 });
+
+//模糊查询
+function search_bill() {
+    var start_time = $('#start_time').val();
+    var end_time = $('#end_time').val();
+    var select_type = $('#select_type').val();
+    var search_remark = $('#search_remark').val();
+    if (end_time.length !== 0 || end_time !== "") {
+        if (start_time > end_time) {
+            layer.alert('开始时间不能大于结束时间');
+            $('#start_time').focus();
+            return;
+        }
+    }
+    $('#bill_table').DataTable().ajax.
+    url('search_bill?start_time='+start_time+"&end_time="+end_time+"&type_id="+select_type+"&remark="+search_remark).draw(false);
+}

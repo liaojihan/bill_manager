@@ -7,15 +7,15 @@ var dtLanguage = {
               "thousands":      ",",
               "lengthMenu":     "显示 _MENU_ 条数据",
               "loadingRecords": "正在载入数据...",
-              //"processing":     "<img src='/static/images/datetable_loading.gif'>",
-              "processing":    "",
+              "processing":     "<img src='/static/images/dataTable-loading/datatable_loading-4.gif'>",
+              //   "processing": '加载中...',
               "search":         "搜索:",
               "zeroRecords":    "未找到匹配的结果",
               "paginate": {
                   "first":      "首页",
                   "last":       "尾页",
                   "next":       "下页",
-                  "previous":   "上页",
+                  "previous":   "上页"
               },
               /*"aria": {
                   "sortAscending":  ": 升序排列",

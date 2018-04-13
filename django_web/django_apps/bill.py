@@ -42,7 +42,8 @@ def detailed(request):
 def get_table_data(request):
     """获取table数据"""
     user_id = request.session.get('user_dict', '')['user_id']
-    result, result_count = bill_dao.get_bill_data(user_id)
+    page_data = request.GET
+    result, result_count = bill_dao.get_bill_data(user_id, page_data)
     data = {
         "recordsTotal": result_count,
         "recordsFiltered": result_count,
@@ -86,3 +87,16 @@ def update_bill(request):
     bill_request = request.POST
     result = bill_dao.update_bill_data(bill_request)
     return HttpResponse(json.dumps(result), content_type=result_type)
+
+
+def search_bill(request):
+    """快速查找"""
+    bill_form = request.GET
+    user_id = request.session.get('user_dict', '')['user_id']
+    result, result_count = bill_dao.get_search_bill(bill_form, user_id)
+    data = {
+        "recordsTotal": result_count,
+        "recordsFiltered": result_count,
+        "data": result
+    }
+    return HttpResponse(json.dumps(data), content_type=result_type)

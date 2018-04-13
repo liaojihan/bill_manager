@@ -31,9 +31,12 @@ def bill_add(bill_request, user_id):
     return u'1'
 
 
-def get_bill_data(user_id):
+def get_bill_data(user_id, page_data):
+    page_start = int(page_data.get('start'))
+    page_length = int(page_data.get('length'))
     user_id_object = User(id=user_id)
     result_data = Bill.objects.filter(is_delete=False, user=user_id_object)
+    bill_count = len(result_data)
     bill_list = list()
     for bill in result_data:
         result = dict()
@@ -44,8 +47,7 @@ def get_bill_data(user_id):
         result['type'] = bill.type.name
         result['id'] = bill.id
         bill_list.append(result)
-    bill_list_count = len(bill_list)
-    return bill_list, bill_list_count
+    return bill_list[page_start: page_start + page_length], bill_count
 
 
 def bill_delete(id_array):
@@ -103,3 +105,35 @@ def update_bill_data(bill_request):
         print str(e)
         return u'修改失败，请联系管理员'
     return u'1'
+
+
+def get_search_bill(bill_form, user_id):
+    start_time = bill_form.get('start_time', '')
+    end_time = bill_form.get('end_time', '')
+    type_id = bill_form.get('type_id', '')
+    remark = bill_form.get('remark', '')
+    page_start = int(bill_form.get('start'))
+    page_length = int(bill_form.get('length'))
+    filter_option = ''
+    if start_time:
+        filter_option += '''AND create_time >= {}'''.format(start_time)
+    if end_time:
+        filter_option += '''AND create_time <= {}'''.format(end_time)
+    if type_id:
+        filter_option += '''AND type_id = {}'''.format(type_id)
+    if remark:
+        filter_option += '''AND remark like "%{}%" '''.format(remark)
+    bill_sql = '''select * from bill WHERE user_id={} AND is_delete=0 '''.format(user_id) + filter_option
+    print bill_sql
+    result = Bill.objects.raw(bill_sql)
+    bill_list = list()
+    for item in result:
+        bill_dict = dict()
+        bill_dict['id'] = item.id
+        bill_dict['select'] = "<input id='check' class='select' type='checkbox' onclick='func_select(this)'></input>"
+        bill_dict['type'] = item.type.name
+        bill_dict['amount'] = item.amount
+        bill_dict['date'] = item.create_time.strftime("%Y-%m-%d %H:%M:%S")
+        bill_dict['remark'] = item.remark
+        bill_list.append(bill_dict)
+    return bill_list[page_start: page_start + page_length], len(bill_list)

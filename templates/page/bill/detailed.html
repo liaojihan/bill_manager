@@ -8,15 +8,19 @@
             <ol class="breadcrumb">
                 <li><a href="detailed">明细</a></li>
                 <li class="active">数据</li>
-                <div style="float: right;">
-                    <label>开始时间</label>
-                    <input class="form-group" id="start_time" name="start_time">
-                    <label>结束时间</label>
-                    <input class="form-group" id="end_time" name="end_time">
-                    <label>消费类型</label>
-                    <select class="form-group" id="select_type" name="select_type"></select>
-                    <label></label>
-                    <input class="form-group">
+                <div style="float: right;margin-top:-2px">
+                    <form id="search_form">
+                        <label>开始时间</label>
+                        <input class="form-group" id="start_time" name="start_time">
+                        <label>结束时间</label>
+                        <input class="form-group" id="end_time" name="end_time">
+                        <label>消费类型</label>
+                        <select class="form-group" id="select_type" name="select_type"></select>
+                        <label>备注</label>
+                        <input class="form-group" id="search_remark" name="remark">
+                        &nbsp;&nbsp;
+                        <button type="button" class="btn btn-success btn-xs" onclick="search_bill()">查找</button>
+                    </form>
                 </div>
             </ol>
 		</div>
@@ -95,7 +99,7 @@
                             </div>
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover" id="bill_table">
                                     <thead>
                                         <tr>
                                             <th>

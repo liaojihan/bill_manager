@@ -37,5 +37,6 @@ urlpatterns = [
     url(r'^get_detailed$', bill.get_detailed, name='get_detailed'),
     url(r'^edit_bill$', bill.edit_bill, name='edit_bill'),
     url(r'^get_edit_type$', type.get_edit_type, name='get_edit_type'),
-    url(r'^update_bill$', bill.update_bill, name='update_bill')
+    url(r'^update_bill$', bill.update_bill, name='update_bill'),
+    url(r'^search_bill$', bill.search_bill, name='search_bill')
 ]
