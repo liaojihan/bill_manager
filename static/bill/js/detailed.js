@@ -15,6 +15,8 @@ function get_bill_type() {
         }
     });
 }
+
+
 $(document).ready(function () {
     $('#bill_table').DataTable({
         "serverSide": true,
@@ -29,7 +31,8 @@ $(document).ready(function () {
         "ajax": {
             url: 'get_table_data',
             type: 'get'
-        },
+        }
+        ,
         columnDefs:[
             {
                 "targets": [5],

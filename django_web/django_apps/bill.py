@@ -18,14 +18,13 @@ def bill(request):
         return HttpResponseRedirect('home')
 
 
-def get_bill_data(request):
+def get_overview_data(request):
+    """获取总览页面数据"""
     user_id = request.session.get('user_dict', '').get('user_id', '')
     if user_id:
         bill_object = GetBillData(user_id=user_id)
-        bill_type = bill_object.get_bill_data()
-        data = {
-            "bill_type": bill_type
-        }
+        bill_type = bill_object.get_pie_chart()
+
         return json.dumps(data)
 
 
@@ -43,11 +42,12 @@ def get_table_data(request):
     """获取table数据"""
     user_id = request.session.get('user_dict', '')['user_id']
     page_data = request.GET
-    result, result_count = bill_dao.get_bill_data(user_id, page_data)
+    result, result_count, consumption_amount = bill_dao.get_bill_data(user_id, page_data)
     data = {
         "recordsTotal": result_count,
         "recordsFiltered": result_count,
-        "data": result
+        "data": result,
+        "money": consumption_amount
     }
     return HttpResponse(json.dumps(data), content_type=result_type)
 

@@ -1,16 +1,22 @@
 # coding=utf-8
 from bill_models.models import Bill, ConsumptionType, User
+from django.db.models import Sum, Count, Max, Min, Avg
 
 
 class GetBillData:
-    """账单页面所有值"""
+    """账单总览"""
 
     def __init__(self, user_id):
         self.user_id = user_id
 
-    def get_bill_data(self):
-        bill_data = Bill.objects.filter(user_id=self.user_id)
-        pass
+    def get_pie_chart(self):
+        amount_count = Bill.objects.filter(user=self.user_id).aggregate(Sum('amount'))['amount__sum']
+        bill_data = Bill.objects.filter(user=self.user_id).order_by('amount')[0:4]
+        data_percent_1 = str(float(bill_data[0].amount) / float(amount_count) * 100) + '%'
+        data_percent_2 = str(float(bill_data[1].amount) / float(amount_count) * 100) + '%'
+        data_percent_3 = str(float(bill_data[2].amount) / float(amount_count) * 100) + '%'
+        data_percent_4 = str(float(bill_data[3].amount) / float(amount_count) * 100) + '%'
+        print data_percent_1, data_percent_2, data_percent_3, data_percent_4
 
 
 def bill_add(bill_request, user_id):
@@ -35,9 +41,10 @@ def get_bill_data(user_id, page_data):
     page_start = int(page_data.get('start'))
     page_length = int(page_data.get('length'))
     user_id_object = User(id=user_id)
-    result_data = Bill.objects.filter(is_delete=False, user=user_id_object)
+    result_data = Bill.objects.filter(is_delete=False, user=user_id_object).all()
     bill_count = len(result_data)
     bill_list = list()
+    consumption_amount = 0
     for bill in result_data:
         result = dict()
         result['select'] = "<input id='check' class='select' type='checkbox' onclick='func_select(this)'></input>"
@@ -47,7 +54,8 @@ def get_bill_data(user_id, page_data):
         result['type'] = bill.type.name
         result['id'] = bill.id
         bill_list.append(result)
-    return bill_list[page_start: page_start + page_length], bill_count
+        consumption_amount += float(bill.amount)
+    return bill_list[page_start: page_start + page_length], bill_count, consumption_amount
 
 
 def bill_delete(id_array):
@@ -124,7 +132,6 @@ def get_search_bill(bill_form, user_id):
     if remark:
         filter_option += '''AND remark like "%{}%" '''.format(remark)
     bill_sql = '''select * from bill WHERE user_id={} AND is_delete=0 '''.format(user_id) + filter_option
-    print bill_sql
     result = Bill.objects.raw(bill_sql)
     bill_list = list()
     for item in result:
