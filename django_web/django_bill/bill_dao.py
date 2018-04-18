@@ -34,7 +34,7 @@ class BillData:
     def get_line_chart(self):
         """获取折线图数据"""
         bill_sql = '''SELECT SUM(amount) as sum_amount, YEAR(create_time) as year 
-                      FROM bill GROUP BY YEAR(create_time)'''
+                      FROM bill WHERE user_id= {} GROUP BY YEAR(create_time)'''.format(self.user_id)
         cursor.execute(bill_sql)
         raw = cursor.fetchall()
         line_list = list()
@@ -138,7 +138,7 @@ def update_bill_data(bill_request):
     try:
         bill_object = Bill.objects.filter(id=bill_id).first()
         bill_object.amount = bill_amount
-        bill_object.date = bill_date
+        bill_object.create_time = bill_date
         bill_object.remark = bill_remark
         bill_object.type = bill_type
         bill_object.save()
