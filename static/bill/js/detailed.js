@@ -114,7 +114,6 @@ function check_amount(data, amount_id) {
     } else if (data.indexOf('.') > 0){
         return;
     }
-    $('#' + amount_id).val(data + '.0');
 }
 
 $(document).on('blur', '#amount', function () {

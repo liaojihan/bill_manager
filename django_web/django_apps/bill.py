@@ -1,7 +1,7 @@
 # coding=utf-8
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
-from django_web.django_bill.bill_dao import GetBillData
+from django_web.django_bill.bill_dao import BillData
 from django_web.django_bill import bill_dao
 import json
 
@@ -22,10 +22,18 @@ def get_overview_data(request):
     """获取总览页面数据"""
     user_id = request.session.get('user_dict', '').get('user_id', '')
     if user_id:
-        bill_object = GetBillData(user_id=user_id)
-        bill_type = bill_object.get_pie_chart()
-
-        return json.dumps(data)
+        bill_object = BillData(user_id=user_id)
+        proportion = bill_object.get_pie_chart()
+        line_data = bill_object.get_line_chart()
+        bar_data = bill_object.get_bar_chart()
+        area_data = bill_object.get_area_chart()
+        data = {
+            "proportion": proportion,
+            "line_data": line_data
+        }
+    else:
+        return HttpResponseRedirect('home')
+    return HttpResponse(json.dumps(data), content_type=result_type)
 
 
 def detailed(request):

@@ -17,7 +17,7 @@ class User(models.Model):
 
 class Bill(models.Model):
     """账单"""
-    amount = models.CharField(max_length=128)
+    amount = models.FloatField(max_length=64)
     create_time = models.DateTimeField()
     is_delete = models.BooleanField()
     remark = models.CharField(max_length=128)

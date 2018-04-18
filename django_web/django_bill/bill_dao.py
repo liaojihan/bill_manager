@@ -1,22 +1,55 @@
 # coding=utf-8
 from bill_models.models import Bill, ConsumptionType, User
 from django.db.models import Sum, Count, Max, Min, Avg
+from django.db import connection
+
+# 获取游标对象
+cursor = connection.cursor()
 
 
-class GetBillData:
+class BillData:
     """账单总览"""
 
     def __init__(self, user_id):
         self.user_id = user_id
 
     def get_pie_chart(self):
+        """获取账单类型占比"""
         amount_count = Bill.objects.filter(user=self.user_id).aggregate(Sum('amount'))['amount__sum']
-        bill_data = Bill.objects.filter(user=self.user_id).order_by('amount')[0:4]
-        data_percent_1 = str(float(bill_data[0].amount) / float(amount_count) * 100) + '%'
-        data_percent_2 = str(float(bill_data[1].amount) / float(amount_count) * 100) + '%'
-        data_percent_3 = str(float(bill_data[2].amount) / float(amount_count) * 100) + '%'
-        data_percent_4 = str(float(bill_data[3].amount) / float(amount_count) * 100) + '%'
-        print data_percent_1, data_percent_2, data_percent_3, data_percent_4
+        bill_sql = '''SELECT SUM(b.amount) as sum_amount, c.`name` FROM 
+                      bill b LEFT JOIN consumption_type c on b.type_id=c.id 
+                      WHERE user_id={} and is_delete=0 GROUP BY b.type_id 
+                      ORDER BY sum_amount DESC limit 4'''.format(self.user_id)
+        cursor.execute(bill_sql)
+        raw = cursor.fetchall()
+        bill_data_list = list()
+        for bill in raw:
+            bill_dict = dict()
+            proportion = round(bill[0] / amount_count * 100, 2)
+            bill_dict['proportion'] = proportion
+            bill_dict['name'] = bill[1]
+            bill_data_list.append(bill_dict)
+        return bill_data_list
+
+    def get_line_chart(self):
+        """获取折线图数据"""
+        bill_sql = '''SELECT SUM(amount) as sum_amount, YEAR(create_time) as year 
+                      FROM bill GROUP BY YEAR(create_time)'''
+        cursor.execute(bill_sql)
+        raw = cursor.fetchall()
+        line_list = list()
+        for line in raw:
+            line_dict = dict()
+            line_dict['year'] = line[1]
+            line_dict['data'] = line[0]
+            line_list.append(line_dict)
+        return line_list
+
+    def get_bar_chart(self):
+        pass
+
+    def get_area_chart(self):
+        pass
 
 
 def bill_add(bill_request, user_id):
