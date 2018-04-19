@@ -45,8 +45,25 @@ class BillData:
             line_list.append(line_dict)
         return line_list
 
+    ep_list = {
+        'data': [11, 11, 11, 11, 11, 11],
+        'year': [2010, 2011, 2012, 2013, 2014, 2015, 2016],
+        'name': ['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff', 'ggg']
+    }
+
     def get_bar_chart(self):
-        pass
+        bill_sql = '''SELECT MAX(amount), type_id, YEAR(create_time) as year FROM bill GROUP BY year'''
+        cursor.execute(bill_sql)
+        raw = cursor.fetchall()
+        bar_list = list()
+        for bar in raw:
+            bar_dict = dict()
+            bar_dict['amount'] = bar[0]
+            type_object = ConsumptionType.objects.filter(id=int(bar[1])).first()
+            bar_dict['name'] = type_object.name
+            bar_dict['year'] = bar[2]
+            bar_list.append(bar_dict)
+        return bar_list
 
     def get_area_chart(self):
         pass

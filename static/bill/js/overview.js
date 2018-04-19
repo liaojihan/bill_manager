@@ -2,6 +2,7 @@ $(function () {
     $.get("get_overview_data", function (data) {
         set_proportion(data['proportion']);
         set_line_charts(data['line_data']);
+        set_bar_charts(data['bar_data']);
     });
 });
 
@@ -49,5 +50,20 @@ function set_line_charts(data) {
             parseTime: false
         });
     }
+}
 
+function set_bar_charts(data) {
+    var bar_charts = echarts.init(document.getElementById('echarts-bar-chart'))
+    var option = {
+        title: {
+            text: '年消费类型'
+        },
+        tooltip: {},
+        legend: {
+            data: ['消费']
+        },
+        xAxis: {
+            data
+        }
+    }
 }

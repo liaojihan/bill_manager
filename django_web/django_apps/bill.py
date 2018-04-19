@@ -29,7 +29,8 @@ def get_overview_data(request):
         area_data = bill_object.get_area_chart()
         data = {
             "proportion": proportion,
-            "line_data": line_data
+            "line_data": line_data,
+            "bar_data": bar_data
         }
     else:
         return HttpResponseRedirect('home')
