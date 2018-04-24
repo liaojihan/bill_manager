@@ -39,5 +39,6 @@ urlpatterns = [
     url(r'^get_edit_type$', type.get_edit_type, name='get_edit_type'),
     url(r'^update_bill$', bill.update_bill, name='update_bill'),
     url(r'^search_bill$', bill.search_bill, name='search_bill'),
-    url(r'^get_overview_data$', bill.get_overview_data, name='get_overview_data')
+    url(r'^get_overview_data$', bill.get_overview_data, name='get_overview_data'),
+    url(r'^reload_bar_charts$', bill.reload_bar_charts, name='reload_bar_charts')
 ]

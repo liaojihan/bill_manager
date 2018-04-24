@@ -53,61 +53,6 @@
 			</div>
 		</div><!--/.row-->
 
-
-{#                <div class="row">#}
-{#                    <div class="col-md-3 col-sm-12 col-xs-12">#}
-{#                        <div class="panel panel-primary text-center no-boder blue">#}
-{#                            <div class="panel-left pull-left blue">#}
-{#                                <i class="fa fa-eye fa-5x"></i>#}
-{##}
-{#                            </div>#}
-{#                            <div class="panel-right">#}
-{#								<h3>16,150</h3>#}
-{#                               <strong> Daily Visits</strong>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-md-3 col-sm-12 col-xs-12">#}
-{#                        <div class="panel panel-primary text-center no-boder blue">#}
-{#                              <div class="panel-left pull-left blue">#}
-{#                                <i class="fa fa-shopping-cart fa-5x"></i>#}
-{#								</div>#}
-{##}
-{#                            <div class="panel-right">#}
-{#							<h3>25,550 </h3>#}
-{#                               <strong> Sales</strong>#}
-{##}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-md-3 col-sm-12 col-xs-12">#}
-{#                        <div class="panel panel-primary text-center no-boder blue">#}
-{#                            <div class="panel-left pull-left blue">#}
-{#                                <i class="fa fa fa-comments fa-5x"></i>#}
-{##}
-{#                            </div>#}
-{#                            <div class="panel-right">#}
-{#							 <h3>11,225 </h3>#}
-{#                               <strong> Comments </strong>#}
-{##}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-md-3 col-sm-12 col-xs-12">#}
-{#                        <div class="panel panel-primary text-center no-boder blue">#}
-{#                            <div class="panel-left pull-left blue">#}
-{#                                <i class="fa fa-users fa-5x"></i>#}
-{##}
-{#                            </div>#}
-{#                            <div class="panel-right">#}
-{#							<h3>72,525 </h3>#}
-{#                             <strong>No. of Visits</strong>#}
-{##}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-
 				<div class="row">
 				<div class="col-md-5">
 						<div class="panel panel-default">
@@ -115,7 +60,7 @@
 							年消费 (单位：元)
 						</div>
 						<div class="panel-body">
-							<div id="morris-line-chart"></div>
+							<div id="echarts-line-chart" style="width: 500px;height: 345px;"></div>
 						</div>
 					</div>
 					</div>
@@ -123,10 +68,10 @@
 						<div class="col-md-7">
 					<div class="panel panel-default">
 					<div class="panel-heading">
-                                年消费第一 (单位：元)
+                                年消费最高 (单位：元)
                             </div>
                             <div class="panel-body">
-                                <div id="echarts-bar-chart"></div>
+                                <div id="echarts-bar-chart" style="width: 900px;height:345px;"></div>
                             </div>
 
 					</div>
@@ -140,8 +85,13 @@
                     <div class="col-md-9 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
 							<div class="panel-heading">
-							Area Chart
-						</div>
+							    消费趋势
+                                <div id="year_div">
+                                    <a href="javascript:void(0)" id="prev"><i class="fa fa-angle-left"></i></a>
+                                    <input type="text" class="form-group" id="year" readonly="readonly">
+                                    <a href="javascript:void(0)" id="next"><i class="fa fa-angle-right"></i></a>
+                                </div>
+						    </div>
 						<div class="panel-body">
 							<div id="morris-area-chart"></div>
 						</div>

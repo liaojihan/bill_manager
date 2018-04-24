@@ -2,6 +2,7 @@ $(function () {
     get_bill_type();
 });
 
+
 function get_bill_type() {
     $.ajax({
         url: 'get_type',

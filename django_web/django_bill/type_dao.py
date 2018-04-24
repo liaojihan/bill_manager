@@ -1,5 +1,5 @@
 # coding=utf-8
-from bill_models.models import ConsumptionType, Bill
+from apps.models import ConsumptionType, Bill
 
 
 def get_type_data():

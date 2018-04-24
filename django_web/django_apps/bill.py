@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django_web.django_bill.bill_dao import BillData
 from django_web.django_bill import bill_dao
 import json
+import datetime
 
 result_type = 'application/json'
 
@@ -21,16 +22,18 @@ def bill(request):
 def get_overview_data(request):
     """获取总览页面数据"""
     user_id = request.session.get('user_dict', '').get('user_id', '')
+    year = datetime.datetime.now().year
     if user_id:
         bill_object = BillData(user_id=user_id)
         proportion = bill_object.get_pie_chart()
         line_data = bill_object.get_line_chart()
         bar_data = bill_object.get_bar_chart()
-        area_data = bill_object.get_area_chart()
+        area_data = bill_object.get_area_chart(year)
         data = {
             "proportion": proportion,
             "line_data": line_data,
-            "bar_data": bar_data
+            "bar_data": bar_data,
+            'area_data': area_data
         }
     else:
         return HttpResponseRedirect('home')
@@ -109,3 +112,12 @@ def search_bill(request):
         "data": result
     }
     return HttpResponse(json.dumps(data), content_type=result_type)
+
+
+def reload_bar_charts(request):
+    """重载年消费详情图"""
+    year = request.GET.get('year')
+    user_id = request.session.get('user_dict', '')['user_id']
+    bill_object = BillData(user_id=user_id)
+    bar_chart_data = bill_object.get_area_chart(year)
+    return HttpResponse(json.dumps(bar_chart_data), content_type=result_type)

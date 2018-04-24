@@ -1,5 +1,5 @@
 # coding=utf-8
-from bill_models.models import User
+from apps.models import User
 from datetime import datetime
 
 

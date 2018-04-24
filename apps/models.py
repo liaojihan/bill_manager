@@ -34,3 +34,5 @@ class ConsumptionType(models.Model):
 
     class Meta:
         db_table = 'consumption_type'
+
+

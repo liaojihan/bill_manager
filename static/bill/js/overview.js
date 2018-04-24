@@ -1,10 +1,14 @@
+
+
 $(function () {
     $.get("get_overview_data", function (data) {
         set_proportion(data['proportion']);
         set_line_charts(data['line_data']);
         set_bar_charts(data['bar_data']);
+        set_area_charts(data['area_data'])
     });
 });
+
 
 function set_proportion(data) {
     if (data){
@@ -25,45 +29,124 @@ function set_proportion(data) {
 }
 
 function set_line_charts(data) {
-    if (data){
-        new Morris.Line({
-            element:  'morris-line-chart',
-            data: data,
-            xkey: 'year',
-            ykeys: ['data'],
-            labels: ['金额'],
-            pointFillColors:['#ffffff'],
-            pointStrokeColors: ['black'],
-            lineColors:['#F09B22'],
-            parseTime: false
-        });
-    }else {
-        new Morris.Line({
-            element:  'morris-line-chart',
-            data: [],
-            xkey: 'year',
-            ykeys: ['data'],
-            labels: ['金额'],
-            pointFillColors:['#ffffff'],
-            pointStrokeColors: ['black'],
-            lineColors:['#F09B22'],
-            parseTime: false
-        });
-    }
+    var line_chart = echarts.init(document.getElementById('echarts-line-chart'));
+    var option = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['金额']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: data['year']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'金额',
+                type:'line',
+                stack: '总量',
+                data:data['data'],
+                smooth: true
+            }
+        ]
+    };
+
+    line_chart.setOption(option);
 }
 
 function set_bar_charts(data) {
-    var bar_charts = echarts.init(document.getElementById('echarts-bar-chart'))
+    var bar_charts = echarts.init(document.getElementById('echarts-bar-chart'));
     var option = {
-        title: {
-            text: '年消费类型'
-        },
-        tooltip: {},
         legend: {
-            data: ['消费']
+            data:['年最高消费']
         },
-        xAxis: {
-            data
+        color: ['#0fc79a'],
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis : [
+            {
+                type : 'category',
+                data : data['year'],
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'年最高消费',
+                type:'bar',
+                barWidth: '60%',
+                data:data['data']
+            }
+        ]
+    };
+
+    bar_charts.setOption(option);
+}
+
+function set_area_charts(data) {
+
+}
+
+var date = new Date();
+
+$('#year').val(date.getFullYear());
+
+$('#prev').on('click', function () {
+    var year = $('#year').val();
+    $('#year').val(Number(year) - 1);
+    $.ajax({
+        url: 'reload_bar_charts',
+        dataType: 'json',
+        type: 'get',
+        data: {'year': $('#year').val()},
+        success: function (data) {
+
         }
+    });
+});
+
+$('#next').on('click', function () {
+    var year = $('#year').val();
+    $('#year').val(Number(year) + 1);
+    console.log($('#year').val());
+});
+
+$('#year').on('change', function () {
+    var year = $('#year').val();
+    console.log(year);
+    check_year(year);
+});
+
+function check_year(year) {
+    if (year.length > 4){
+        $('#year').val(date.getFullYear());
     }
 }

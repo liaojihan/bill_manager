@@ -5,14 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0bea6d3-0253-41a0-bd92-3a980d160562" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/Echarts/echarts.common.min.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/django_web.iml" afterPath="$PROJECT_DIR$/.idea/django_web.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/Echarts/echarts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/bill/css/year_div.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/css/demo.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/images/.picasa.ini" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/images/bg-footer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/images/clock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/images/demo2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/images/hands.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/css/demo.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/.picasa.ini" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/bg-footer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/clock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/demo2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/hands.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/js/jquery-1.6.2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/jiaoben18637/js/script.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/js/jquery-1.6.2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquery-date/js/script.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bill_models/__init__.py" afterPath="$PROJECT_DIR$/apps/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/bill_models/admin.py" afterPath="$PROJECT_DIR$/apps/admin.py" />
+      <change beforePath="$PROJECT_DIR$/bill_models/apps.py" afterPath="$PROJECT_DIR$/apps/apps.py" />
+      <change beforePath="$PROJECT_DIR$/bill_models/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/apps/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/bill_models/migrations/__init__.py" afterPath="$PROJECT_DIR$/apps/migrations/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/bill_models/models.py" afterPath="$PROJECT_DIR$/apps/models.py" />
+      <change beforePath="$PROJECT_DIR$/bill_models/tests.py" afterPath="$PROJECT_DIR$/apps/tests.py" />
+      <change beforePath="$PROJECT_DIR$/bill_models/views.py" afterPath="$PROJECT_DIR$/apps/views.py" />
       <change beforePath="$PROJECT_DIR$/django_web/django_apps/bill.py" afterPath="$PROJECT_DIR$/django_web/django_apps/bill.py" />
       <change beforePath="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/home_dao.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/django_bill/type_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/type_dao.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/settings.py" afterPath="$PROJECT_DIR$/django_web/settings.py" />
+      <change beforePath="$PROJECT_DIR$/django_web/urls.py" afterPath="$PROJECT_DIR$/django_web/urls.py" />
+      <change beforePath="$PROJECT_DIR$/static/bill/js/detailed.js" afterPath="$PROJECT_DIR$/static/bill/js/detailed.js" />
       <change beforePath="$PROJECT_DIR$/static/bill/js/overview.js" afterPath="$PROJECT_DIR$/static/bill/js/overview.js" />
-      <change beforePath="$PROJECT_DIR$/static/manage/assets/js/custom-scripts.js" afterPath="$PROJECT_DIR$/static/manage/assets/js/custom-scripts.js" />
       <change beforePath="$PROJECT_DIR$/templates/_overview_base.html" afterPath="$PROJECT_DIR$/templates/_overview_base.html" />
       <change beforePath="$PROJECT_DIR$/templates/page/bill/overview.html" afterPath="$PROJECT_DIR$/templates/page/bill/overview.html" />
     </list>
@@ -51,8 +80,8 @@
       <file leaf-file-name="bill.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="21" />
+            <state relative-caret-position="377">
+              <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="17" />
               <folding>
                 <element signature="e#15#73#0" expanded="true" />
               </folding>
@@ -60,42 +89,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bill_dao.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bill_dao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+            <state relative-caret-position="539">
+              <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="12" />
               <folding>
-                <element signature="e#15#73#0" expanded="true" />
-                <marker date="1524129668850" expanded="true" signature="476:725" ph="SELECT SUM(b... bill" />
-                <marker date="1524129668850" expanded="true" signature="476:733" ph="SELECT SUM(b... bill" />
-                <marker date="1524129668850" expanded="true" signature="1214:1307" ph="SELECT SUM(a... " />
-                <marker date="1524129668850" expanded="true" signature="1214:1351" ph="SELECT SUM(a... " />
-                <marker date="1524129668850" expanded="true" signature="1912:1990" ph="SELECT MAX(a... " />
-                <marker date="1524129668850" expanded="true" signature="6420:6453" ph="select * fro... bill" />
-                <marker date="1524129668850" expanded="true" signature="6420:6455" ph="select * fro... bill" />
-                <marker date="1524129668850" expanded="true" signature="6420:6470" ph="select * fro... bill" />
-                <marker date="1524129668850" expanded="true" signature="6420:6472" ph="select * fro... bill" />
+                <marker date="1524561151874" expanded="true" signature="469:718" ph="SELECT SUM(b... bill" />
+                <marker date="1524561151874" expanded="true" signature="469:726" ph="SELECT SUM(b... bill" />
+                <marker date="1524561151874" expanded="true" signature="1207:1300" ph="SELECT SUM(a... " />
+                <marker date="1524561151874" expanded="true" signature="1207:1344" ph="SELECT SUM(a... " />
+                <marker date="1524561151874" expanded="true" signature="1791:1869" ph="SELECT MAX(a... " />
+                <marker date="1524561151874" expanded="true" signature="6424:6457" ph="select * fro... bill" />
+                <marker date="1524561151874" expanded="true" signature="6424:6459" ph="select * fro... bill" />
+                <marker date="1524561151874" expanded="true" signature="6424:6474" ph="select * fro... bill" />
+                <marker date="1524561151874" expanded="true" signature="6424:6476" ph="select * fro... bill" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bill_models/models.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_web/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="27">
+              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_overview_base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/_overview_base.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="115" column="57" lean-forward="false" selection-start-line="115" selection-start-column="57" selection-end-line="115" selection-end-column="57" />
+            <state relative-caret-position="324">
+              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -104,38 +132,32 @@
       <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3213">
-              <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="394">
+              <caret line="90" column="102" lean-forward="false" selection-start-line="90" selection-start-column="102" selection-end-line="90" selection-end-column="102" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="overview.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/bill/js/overview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+            <state relative-caret-position="135">
+              <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom-scripts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/manage/assets/js/custom-scripts.js">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="65" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/manage/assets/js/custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="175" column="28" lean-forward="false" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="28" />
+            <state relative-caret-position="377">
+              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -144,15 +166,15 @@
       <file leaf-file-name="detailed.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/bill/js/detailed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2619">
-              <caret line="112" column="14" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="14" />
+            <state relative-caret-position="1134">
+              <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="56" />
               <folding>
-                <marker date="1524015746112" expanded="true" signature="1065:1071" ph=" " />
-                <marker date="1524015746112" expanded="true" signature="1071:1077" ph=" " />
-                <marker date="1524015746112" expanded="true" signature="1084:1090" ph=" " />
-                <marker date="1524015746112" expanded="true" signature="1090:1096" ph=" " />
-                <marker date="1524015746112" expanded="true" signature="1265:1271" ph=" " />
-                <marker date="1524015746112" expanded="true" signature="1271:1277" ph=" " />
+                <marker date="1524204404852" expanded="true" signature="1066:1072" ph=" " />
+                <marker date="1524204404852" expanded="true" signature="1072:1078" ph=" " />
+                <marker date="1524204404852" expanded="true" signature="1085:1091" ph=" " />
+                <marker date="1524204404852" expanded="true" signature="1091:1097" ph=" " />
+                <marker date="1524204404852" expanded="true" signature="1266:1272" ph=" " />
+                <marker date="1524204404852" expanded="true" signature="1272:1278" ph=" " />
               </folding>
             </state>
           </provider>
@@ -166,18 +188,12 @@
         <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Buttons With Icons</find>
-      <find>warning</find>
-      <find>Click</find>
-      <find>Modals Example</find>
-      <find>INSTALLED_APPS</find>
-      <find>DEBUG</find>
-      <find>throw new Error(&quot;Graph container element not found&quot;);</find>
       <find>morris-bar-chart</find>
       <find>hasClass</find>
       <find>Simple Buttons Examples</find>
@@ -201,6 +217,13 @@
       <find>easypiechart-blue</find>
       <find>2024</find>
       <find>morris-line-chart</find>
+      <find>bar</find>
+      <find>morris-area-chart</find>
+      <find>morris-donut-chart</find>
+      <find>Circle Pop</find>
+      <find>nav-circlepop</find>
+      <find>```</find>
+      <find>container</find>
     </findStrings>
     <replaceStrings>
       <replace>scaleColor: true</replace>
@@ -212,9 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django_web/view.py" />
-        <option value="$PROJECT_DIR$/django_web/home.py" />
-        <option value="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/placeholder.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/static/azds_login-forms/form-2/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/django_models/bill.py" />
@@ -253,16 +273,19 @@
         <option value="$PROJECT_DIR$/templates/page/bill/detailed.html" />
         <option value="$PROJECT_DIR$/static/manage/assets/js/easypiechart-data.js" />
         <option value="$PROJECT_DIR$/static/manage/assets/css/custom-styles.css" />
-        <option value="$PROJECT_DIR$/django_web/urls.py" />
+        <option value="$PROJECT_DIR$/templates/_detailed_base.html" />
         <option value="$PROJECT_DIR$/bill_models/models.py" />
         <option value="$PROJECT_DIR$/static/bill/js/detailed.js" />
-        <option value="$PROJECT_DIR$/templates/_detailed_base.html" />
-        <option value="$PROJECT_DIR$/django_web/django_apps/bill.py" />
         <option value="$PROJECT_DIR$/static/manage/assets/js/custom-scripts.js" />
+        <option value="$PROJECT_DIR$/static/manage/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/static/switch/index.html" />
         <option value="$PROJECT_DIR$/templates/_overview_base.html" />
+        <option value="$PROJECT_DIR$/static/bill/css/year_div.css" />
         <option value="$PROJECT_DIR$/templates/page/bill/overview.html" />
-        <option value="$PROJECT_DIR$/static/bill/js/overview.js" />
+        <option value="$PROJECT_DIR$/django_web/urls.py" />
         <option value="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
+        <option value="$PROJECT_DIR$/django_web/django_apps/bill.py" />
+        <option value="$PROJECT_DIR$/static/bill/js/overview.js" />
       </list>
     </option>
   </component>
@@ -301,7 +324,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,7 +334,7 @@
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="bill_models" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
@@ -350,20 +372,24 @@
             <path>
               <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="bill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bill_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bill_manager" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="bill_manager" type="cbb8eebc:String" user="bill_manager" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,13 +397,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="D:/dasb" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/github_file/bill_manager/static/manage/assets/js/custom-scripts.js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_file\bill_manager\static" />
       <recent name="D:\github_file\bill_manager\static\Echarts" />
       <recent name="D:\github_file\bill_manager\static\images\dataTable-loading" />
       <recent name="D:\github_file\bill_manager\static\images" />
-      <recent name="D:\github_file\bill_manager\static" />
       <recent name="D:\github_file\bill_manager\templates\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -420,6 +448,8 @@
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
     </configuration>
+    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bill_manager/static/jquery-date/index.html" />
+    <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bill_manager/static/switch/index.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/django_web/templates/static/azds_login-forms/form-1/index.html" />
     <configuration name="django_web" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -613,16 +643,20 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.django_web" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.xxxxx" />
       <item index="2" class="java.lang.String" itemvalue="Django tests.Test: templates.static.azds_login-forms.form-2.index.html" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="Django tests.Test: templates.static.azds_login-forms.form-2.index.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="3" class="java.lang.String" itemvalue="Django tests.Test: templates.static.azds_login-forms.form-2.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -671,39 +705,25 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3821656" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2546246" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31664854" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43090317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43090317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3821656" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32346243" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31664854" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12553649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@django_web" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61930585" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43090317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -720,97 +740,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/jquery-1.10.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/form.html" />
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/bill_type.html" />
-    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/jquery.metisMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/manage/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/morris/morris-0.4.3.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/dataTables/dataTables.bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/situation_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/core/signing.py" />
-    <entry file="file://$PROJECT_DIR$/static/azds_login-forms/form-2/assets/bootstrap/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="1868" column="2" lean-forward="false" selection-start-line="1868" selection-start-column="2" selection-end-line="1868" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="82" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/json/__init__.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/templatetags/static.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py" />
-    <entry file="file://$USER_HOME$/Downloads/Desktop/ANSU-Asterism(14)/ANSU-Asterism/src/main/webapp/WEB-INF/views/person.jsp" />
-    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/dataTables/jquery.dataTables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="13512" column="8" lean-forward="false" selection-start-line="13512" selection-start-column="8" selection-end-line="13512" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="621" column="22" lean-forward="true" selection-start-line="621" selection-start-column="4" selection-end-line="621" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="1037" column="57" lean-forward="true" selection-start-line="1036" selection-start-column="4" selection-end-line="1037" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/page/bill/table.html" />
     <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/ui-elements.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,14 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="1" column="10126" lean-forward="false" selection-start-line="1" selection-start-column="10121" selection-end-line="1" selection-end-column="10126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,29 +823,6 @@
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/db/models/query.py" />
-    <entry file="file://$PROJECT_DIR$/django_web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bill/js/detailed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2619">
-          <caret line="112" column="14" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="14" />
-          <folding>
-            <marker date="1524015746112" expanded="true" signature="1065:1071" ph=" " />
-            <marker date="1524015746112" expanded="true" signature="1071:1077" ph=" " />
-            <marker date="1524015746112" expanded="true" signature="1084:1090" ph=" " />
-            <marker date="1524015746112" expanded="true" signature="1090:1096" ph=" " />
-            <marker date="1524015746112" expanded="true" signature="1265:1271" ph=" " />
-            <marker date="1524015746112" expanded="true" signature="1271:1277" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/manage/assets/js/morris/raphael-2.1.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -939,30 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="175" column="28" lean-forward="false" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bill_models/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="81" column="61" lean-forward="true" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/_detailed_base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -971,17 +845,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
+    <entry file="file://$PROJECT_DIR$/static/Echarts/echarts.common.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="e#15#73#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/Echarts/echarts.common.min.js">
+    <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="963">
+          <caret line="621" column="22" lean-forward="true" selection-start-line="621" selection-start-column="4" selection-end-line="621" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cpts_769_bgi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="435" column="57" lean-forward="false" selection-start-line="435" selection-start-column="41" selection-end-line="435" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/cpts_769_bgi/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9153">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Echarts/echarts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -991,52 +883,233 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/manage/assets/js/custom-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="156" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3807">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="145" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/clock.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/demo2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/hands.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/bg-footer.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/jiaoben18637/images/.picasa.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="65" selection-end-column="18" />
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-date/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/switch/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/switch/css/component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/switch/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ol#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#986#992#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/201411091433/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="192" column="34" lean-forward="false" selection-start-line="192" selection-start-column="30" selection-end-line="192" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/manage/assets/js/dataTables/dataTables.bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/_overview_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="115" column="57" lean-forward="false" selection-start-line="115" selection-start-column="57" selection-end-line="115" selection-end-column="57" />
+        <state relative-caret-position="324">
+          <caret line="21" column="70" lean-forward="false" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bill/css/year_div.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bill/js/detailed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="56" />
+          <folding>
+            <marker date="1524204404852" expanded="true" signature="1066:1072" ph=" " />
+            <marker date="1524204404852" expanded="true" signature="1072:1078" ph=" " />
+            <marker date="1524204404852" expanded="true" signature="1085:1091" ph=" " />
+            <marker date="1524204404852" expanded="true" signature="1091:1097" ph=" " />
+            <marker date="1524204404852" expanded="true" signature="1266:1272" ph=" " />
+            <marker date="1524204404852" expanded="true" signature="1272:1278" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page/bill/overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3213">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="394">
+          <caret line="90" column="102" lean-forward="false" selection-start-line="90" selection-start-column="102" selection-end-line="90" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/bill/js/overview.js">
+    <entry file="file://$PROJECT_DIR$/django_web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        <state relative-caret-position="377">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        <state relative-caret-position="539">
+          <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="12" />
+          <folding>
+            <marker date="1524561151874" expanded="true" signature="469:718" ph="SELECT SUM(b... bill" />
+            <marker date="1524561151874" expanded="true" signature="469:726" ph="SELECT SUM(b... bill" />
+            <marker date="1524561151874" expanded="true" signature="1207:1300" ph="SELECT SUM(a... " />
+            <marker date="1524561151874" expanded="true" signature="1207:1344" ph="SELECT SUM(a... " />
+            <marker date="1524561151874" expanded="true" signature="1791:1869" ph="SELECT MAX(a... " />
+            <marker date="1524561151874" expanded="true" signature="6424:6457" ph="select * fro... bill" />
+            <marker date="1524561151874" expanded="true" signature="6424:6459" ph="select * fro... bill" />
+            <marker date="1524561151874" expanded="true" signature="6424:6474" ph="select * fro... bill" />
+            <marker date="1524561151874" expanded="true" signature="6424:6476" ph="select * fro... bill" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
-            <marker date="1524129668850" expanded="true" signature="476:725" ph="SELECT SUM(b... bill" />
-            <marker date="1524129668850" expanded="true" signature="476:733" ph="SELECT SUM(b... bill" />
-            <marker date="1524129668850" expanded="true" signature="1214:1307" ph="SELECT SUM(a... " />
-            <marker date="1524129668850" expanded="true" signature="1214:1351" ph="SELECT SUM(a... " />
-            <marker date="1524129668850" expanded="true" signature="1912:1990" ph="SELECT MAX(a... " />
-            <marker date="1524129668850" expanded="true" signature="6420:6453" ph="select * fro... bill" />
-            <marker date="1524129668850" expanded="true" signature="6420:6455" ph="select * fro... bill" />
-            <marker date="1524129668850" expanded="true" signature="6420:6470" ph="select * fro... bill" />
-            <marker date="1524129668850" expanded="true" signature="6420:6472" ph="select * fro... bill" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bill/js/overview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

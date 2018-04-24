@@ -1,5 +1,5 @@
 # coding=utf-8
-from bill_models.models import Bill, ConsumptionType, User
+from apps.models import Bill, ConsumptionType, User
 from django.db.models import Sum, Count, Max, Min, Avg
 from django.db import connection
 
@@ -37,35 +37,36 @@ class BillData:
                       FROM bill WHERE user_id= {} GROUP BY YEAR(create_time)'''.format(self.user_id)
         cursor.execute(bill_sql)
         raw = cursor.fetchall()
-        line_list = list()
+        line_dict = dict()
+        year_list = list()
+        data_list = list()
         for line in raw:
-            line_dict = dict()
-            line_dict['year'] = line[1]
-            line_dict['data'] = line[0]
-            line_list.append(line_dict)
-        return line_list
-
-    ep_list = {
-        'data': [11, 11, 11, 11, 11, 11],
-        'year': [2010, 2011, 2012, 2013, 2014, 2015, 2016],
-        'name': ['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff', 'ggg']
-    }
+            year_list.append(line[1])
+            data_list.append(line[0])
+        line_dict['year'] = year_list
+        line_dict['data'] = data_list
+        return line_dict
 
     def get_bar_chart(self):
+        """获取柱状图数据"""
         bill_sql = '''SELECT MAX(amount), type_id, YEAR(create_time) as year FROM bill GROUP BY year'''
         cursor.execute(bill_sql)
         raw = cursor.fetchall()
-        bar_list = list()
+        bar_dict = dict()
+        data_list = list()
+        year_list = list()
+        name_list = list()
         for bar in raw:
-            bar_dict = dict()
-            bar_dict['amount'] = bar[0]
+            data_list.append(bar[0])
             type_object = ConsumptionType.objects.filter(id=int(bar[1])).first()
-            bar_dict['name'] = type_object.name
-            bar_dict['year'] = bar[2]
-            bar_list.append(bar_dict)
-        return bar_list
+            name_list.append(type_object.name)
+            year_list.append(bar[2])
+        bar_dict['data'] = data_list
+        bar_dict['year'] = year_list
+        bar_dict['name'] = name_list
+        return bar_dict
 
-    def get_area_chart(self):
+    def get_area_chart(self, year):
         pass
 
 
