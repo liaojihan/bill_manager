@@ -78,8 +78,15 @@ class BillData:
 
     def get_area_chart(self, year):
         """获取年消费详情"""
+        type_ids = Bill.objects.values('type').filter(user=self.user_id, create_time__year=year)
+        name_list = list()
+        for t in type_ids:
+            name = ConsumptionType.objects.filter(id=int(t['type'])).first().name
+            name_list.append(name)
+        name_list = list(set(name_list))
+        result_data = Bill.objects.values('type').filter(is_delete=False, user=self.user_id, create_time__year=year).\
+            annotate(sum_amount=Sum('amount')).all()
         
-
 
 def bill_add(bill_request, user_id):
     bill_type = bill_request.get('type', '')

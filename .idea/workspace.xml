@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0bea6d3-0253-41a0-bd92-3a980d160562" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/django_web/django_apps/bill.py" afterPath="$PROJECT_DIR$/django_web/django_apps/bill.py" />
       <change beforePath="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" afterPath="$PROJECT_DIR$/django_web/django_bill/bill_dao.py" />
-      <change beforePath="$PROJECT_DIR$/django_web/urls.py" afterPath="$PROJECT_DIR$/django_web/urls.py" />
-      <change beforePath="$PROJECT_DIR$/static/bill/js/detailed.js" afterPath="$PROJECT_DIR$/static/bill/js/detailed.js" />
-      <change beforePath="$PROJECT_DIR$/static/bill/js/overview.js" afterPath="$PROJECT_DIR$/static/bill/js/overview.js" />
-      <change beforePath="$PROJECT_DIR$/templates/page/bill/overview.html" afterPath="$PROJECT_DIR$/templates/page/bill/overview.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +43,7 @@
       <file leaf-file-name="bill.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="2645">
               <caret line="116" column="22" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="22" />
               <folding>
                 <element signature="e#15#73#0" expanded="true" />
@@ -60,18 +55,18 @@
       <file leaf-file-name="bill_dao.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            <state relative-caret-position="404">
+              <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
               <folding>
-                <marker date="1524641135842" expanded="true" signature="469:718" ph="SELECT SUM(b... bill" />
-                <marker date="1524641135842" expanded="true" signature="469:726" ph="SELECT SUM(b... bill" />
-                <marker date="1524641135842" expanded="true" signature="1207:1300" ph="SELECT SUM(a... " />
-                <marker date="1524641135842" expanded="true" signature="1207:1344" ph="SELECT SUM(a... " />
-                <marker date="1524641135842" expanded="true" signature="1791:1869" ph="SELECT MAX(a... " />
-                <marker date="1524641135842" expanded="true" signature="6765:6798" ph="select * fro... bill" />
-                <marker date="1524641135842" expanded="true" signature="6765:6800" ph="select * fro... bill" />
-                <marker date="1524641135842" expanded="true" signature="6765:6815" ph="select * fro... bill" />
-                <marker date="1524641135842" expanded="true" signature="6765:6817" ph="select * fro... bill" />
+                <element signature="e#15#66#0" expanded="true" />
+                <marker date="1524648631121" expanded="true" signature="469:471" ph="SELECT SUM(b... bill" />
+                <marker date="1524648631121" expanded="true" signature="469:726" ph="SELECT SUM(b... bill" />
+                <marker date="1524648631121" expanded="true" signature="1207:1344" ph="SELECT SUM(a... " />
+                <marker date="1524648631121" expanded="true" signature="1791:1869" ph="SELECT MAX(a... " />
+                <marker date="1524648631121" expanded="true" signature="7245:7278" ph="select * fro... bill" />
+                <marker date="1524648631121" expanded="true" signature="7245:7280" ph="select * fro... bill" />
+                <marker date="1524648631121" expanded="true" signature="7245:7295" ph="select * fro... bill" />
+                <marker date="1524648631121" expanded="true" signature="7245:7297" ph="select * fro... bill" />
               </folding>
             </state>
           </provider>
@@ -80,18 +75,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_web/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2916">
+            <state relative-caret-position="27">
               <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -168,7 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hasClass</find>
       <find>Simple Buttons Examples</find>
       <find>refresh_data</find>
       <find>get_table_data</find>
@@ -198,6 +182,7 @@
       <find>```</find>
       <find>container</find>
       <find>submit</find>
+      <find>L</find>
     </findStrings>
     <replaceStrings>
       <replace>scaleColor: true</replace>
@@ -703,7 +688,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="3" y="434" width="1914" height="251" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31664854" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15298508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.077292114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -940,22 +925,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/switch/css/demo.css" />
     <entry file="file://$PROJECT_DIR$/static/switch/css/component.css" />
-    <entry file="file://$PROJECT_DIR$/apps/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2916">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/switch/index.html" />
     <entry file="file://$PROJECT_DIR$/templates/page/bill/detailed.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1020,16 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="116" column="22" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="22" />
-          <folding>
-            <element signature="e#15#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/bill/js/detailed.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1061,20 +1020,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/django_apps/bill.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2645">
+          <caret line="116" column="22" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="22" />
+          <folding>
+            <element signature="e#15#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_web/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_web/django_bill/bill_dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+        <state relative-caret-position="404">
+          <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
           <folding>
-            <marker date="1524641135842" expanded="true" signature="469:718" ph="SELECT SUM(b... bill" />
-            <marker date="1524641135842" expanded="true" signature="469:726" ph="SELECT SUM(b... bill" />
-            <marker date="1524641135842" expanded="true" signature="1207:1300" ph="SELECT SUM(a... " />
-            <marker date="1524641135842" expanded="true" signature="1207:1344" ph="SELECT SUM(a... " />
-            <marker date="1524641135842" expanded="true" signature="1791:1869" ph="SELECT MAX(a... " />
-            <marker date="1524641135842" expanded="true" signature="6765:6798" ph="select * fro... bill" />
-            <marker date="1524641135842" expanded="true" signature="6765:6800" ph="select * fro... bill" />
-            <marker date="1524641135842" expanded="true" signature="6765:6815" ph="select * fro... bill" />
-            <marker date="1524641135842" expanded="true" signature="6765:6817" ph="select * fro... bill" />
+            <element signature="e#15#66#0" expanded="true" />
+            <marker date="1524648631121" expanded="true" signature="469:471" ph="SELECT SUM(b... bill" />
+            <marker date="1524648631121" expanded="true" signature="469:726" ph="SELECT SUM(b... bill" />
+            <marker date="1524648631121" expanded="true" signature="1207:1344" ph="SELECT SUM(a... " />
+            <marker date="1524648631121" expanded="true" signature="1791:1869" ph="SELECT MAX(a... " />
+            <marker date="1524648631121" expanded="true" signature="7245:7278" ph="select * fro... bill" />
+            <marker date="1524648631121" expanded="true" signature="7245:7280" ph="select * fro... bill" />
+            <marker date="1524648631121" expanded="true" signature="7245:7295" ph="select * fro... bill" />
+            <marker date="1524648631121" expanded="true" signature="7245:7297" ph="select * fro... bill" />
           </folding>
         </state>
       </provider>
