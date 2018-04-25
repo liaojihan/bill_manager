@@ -6,7 +6,7 @@ $(function () {
         set_line_charts(data['line_data']);
         set_bar_charts(data['bar_data']);
         set_area_charts(data['area_data'])
-    });
+    }, 'json');
 });
 
 
@@ -119,34 +119,46 @@ var date = new Date();
 
 $('#year').val(date.getFullYear());
 
+$('#year').bind('keyup', function () {
+    var year = $('#year').val();
+    check_year(year);
+    if (event.keyCode == "13"){
+        reload_area_chart(year);
+    }
+});
+
 $('#prev').on('click', function () {
     var year = $('#year').val();
     $('#year').val(Number(year) - 1);
-    $.ajax({
-        url: 'reload_bar_charts',
-        dataType: 'json',
-        type: 'get',
-        data: {'year': $('#year').val()},
-        success: function (data) {
+    check_year($('#year').val());
 
-        }
-    });
 });
 
 $('#next').on('click', function () {
     var year = $('#year').val();
-    $('#year').val(Number(year) + 1);
-    console.log($('#year').val());
-});
-
-$('#year').on('change', function () {
-    var year = $('#year').val();
-    console.log(year);
+    year  = Number(year) + 1;
     check_year(year);
 });
 
 function check_year(year) {
-    if (year.length > 4){
+    if (year.length > 4 || year > date.getFullYear() || year < 1975){
         $('#year').val(date.getFullYear());
+        return;
     }
+    $('#year').val(year);
+    reload_area_chart(year);
+}
+
+function reload_area_chart(year) {
+    $.ajax({
+        url: 'reload_area_charts',
+        dataType: 'json',
+        type: 'GET',
+        data: {'year': year},
+        success: function (data) {
+            if (data){
+                set_area_charts(year);
+            }
+        }
+    });
 }

@@ -66,8 +66,19 @@ class BillData:
         bar_dict['name'] = name_list
         return bar_dict
 
+    eg_list = {
+        'name': ['aa', 'bb', 'cc', 'dd', 'ee'],
+        'year': [2010, 2011, 2012, 2013, 2014],
+        'aa': [111, 222, 333, 444, 555],
+        'bb': [111, 222, 333, 444, 555],
+        'cc': [111, 222, 333, 444, 555],
+        'dd': [111, 222, 333, 444, 555],
+        'ee': [111, 222, 333, 444, 555]
+    }
+
     def get_area_chart(self, year):
-        pass
+        """获取年消费详情"""
+        
 
 
 def bill_add(bill_request, user_id):

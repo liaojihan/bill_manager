@@ -39,7 +39,7 @@ $(document).ready(function () {
                 "targets": [5],
                 data: "id",
                 "render": function (data, type, row) {
-                    return '<a href="#" onclick="detailed_bill(' + row['id'] + ')" class="btn btn-default btn-xs"><i class="fa fa-paperclip"></i>&nbsp;&nbsp;看一看</a>&nbsp;&nbsp;' +
+                    return '<a href="javascript:void(0)" onclick="detailed_bill(' + row['id'] + ')" class="btn btn-default btn-xs"><i class="fa fa-paperclip"></i>&nbsp;&nbsp;看一看</a>&nbsp;&nbsp;' +
                             '<a href="javascript:void(0)" onclick="edit_bill('+ row['id'] +')" class="btn btn-success btn-xs" role="button"><i class="fa fa-cog"></i>&nbsp;&nbsp;改一改</a>'
                 }
             }

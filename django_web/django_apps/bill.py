@@ -114,7 +114,7 @@ def search_bill(request):
     return HttpResponse(json.dumps(data), content_type=result_type)
 
 
-def reload_bar_charts(request):
+def reload_area_charts(request):
     """重载年消费详情图"""
     year = request.GET.get('year')
     user_id = request.session.get('user_dict', '')['user_id']
