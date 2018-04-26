@@ -66,27 +66,19 @@ class BillData:
         bar_dict['name'] = name_list
         return bar_dict
 
-    eg_list = {
-        'name': ['aa', 'bb', 'cc', 'dd', 'ee'],
-        'year': [2010, 2011, 2012, 2013, 2014],
-        'aa': [111, 222, 333, 444, 555],
-        'bb': [111, 222, 333, 444, 555],
-        'cc': [111, 222, 333, 444, 555],
-        'dd': [111, 222, 333, 444, 555],
-        'ee': [111, 222, 333, 444, 555]
-    }
-
     def get_area_chart(self, year):
         """获取年消费详情"""
-        type_ids = Bill.objects.values('type').filter(user=self.user_id, create_time__year=year)
+        result_data = Bill.objects.values('type').filter(is_delete=False, user=self.user_id, create_time__year=year). \
+            annotate(sum_amount=Sum('amount')).order_by('sum_amount').all()
         name_list = list()
-        for t in type_ids:
-            name = ConsumptionType.objects.filter(id=int(t['type'])).first().name
-            name_list.append(name)
-        name_list = list(set(name_list))
-        result_data = Bill.objects.values('type').filter(is_delete=False, user=self.user_id, create_time__year=year).\
-            annotate(sum_amount=Sum('amount')).all()
-        
+        data_list = list()
+        for result in result_data:
+            type_name = ConsumptionType.objects.filter(id=int(result['type'])).first().name
+            name_list.append(type_name)
+            data_list.append(result['sum_amount'])
+        result_dict = {'name_list': name_list, 'data_list': data_list}
+        return result_dict
+
 
 def bill_add(bill_request, user_id):
     bill_type = bill_request.get('type', '')

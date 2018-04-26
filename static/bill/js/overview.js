@@ -5,7 +5,7 @@ $(function () {
         set_proportion(data['proportion']);
         set_line_charts(data['line_data']);
         set_bar_charts(data['bar_data']);
-        set_area_charts(data['area_data'])
+        set_area_charts(data['area_data']);
     }, 'json');
 });
 
@@ -29,7 +29,7 @@ function set_proportion(data) {
 }
 
 function set_line_charts(data) {
-    var line_chart = echarts.init(document.getElementById('echarts-line-chart'));
+    var line_chart = echarts.init(document.getElementById('echarts-line-chart'), 'infographic');
     var option = {
         tooltip: {
             trigger: 'axis'
@@ -66,7 +66,7 @@ function set_line_charts(data) {
 }
 
 function set_bar_charts(data) {
-    var bar_charts = echarts.init(document.getElementById('echarts-bar-chart'));
+    var bar_charts = echarts.init(document.getElementById('echarts-bar-chart'), 'infographic');
     var option = {
         legend: {
             data:['年最高消费']
@@ -112,7 +112,57 @@ function set_bar_charts(data) {
 }
 
 function set_area_charts(data) {
+    var area_charts = echarts.init(document.getElementById('echart-area-chart'), 'infographic');
+    var option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data:['金额']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : data['name_list']
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
 
+            {
+                name:'金额',
+                type:'line',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                areaStyle: {normal: {}},
+                data:data['data_list']
+            }
+        ]
+    };
+
+    area_charts.setOption(option);
 }
 
 var date = new Date();
