@@ -69,7 +69,7 @@ qrcode==6.0
 queuelib==1.4.2
 redis==2.10.6
 requests==2.11.1
-Scrapy==1.5.0
+Scrapy==1.8.1
 service-identity==17.0.0
 singledispatch==3.4.0.3
 six==1.10.0
